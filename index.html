@@ -136,6 +136,7 @@
 				if (word == "corpus") corpus.play();
 				if (word == "investigaciones") investigaciones.play();
 				if (word == "proyectos_menu") proyectos_menu.play();
+				if (word == "que_hacemos") que_hacemos.play();
 				if (word == "como_lo_hacemos") como_lo_hacemos.play();
 				if (word == "que_nos_inspira") que_nos_inspira.play();
 				
@@ -186,6 +187,7 @@
 	var corpus = new Audio();
 	var investigaciones = new Audio();
 	var proyectos_menu = new Audio();
+	var que_hacemos = new Audio();
 	var como_lo_hacemos = new Audio();
 	var que_nos_inspira = new Audio();
 
@@ -228,6 +230,7 @@
 
 	corpus.src = 'audio/qillqakuna_uyariykunapas_1.mp3';
 	investigaciones.src = 'audio/yachay_maskapaykuna.mp3';
+	que_hacemos.src = 'audio/que_hacemos.mp3';
 	proyectos_menu.src = 'audio/ruwaykuna.mp3';
 	como_lo_hacemos.src = 'audio/imaynatam_ruwasunchik.mp3';
 	que_nos_inspira.src = 'audio/imam_sunqunchikta_kuyuchin.mp3';
@@ -348,7 +351,7 @@
 				
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
-		            <li class="active"><a href="#" data-nav-section="home" onmouseover="quechua.play()" onmouseout="quechua.pause();"><span>Quechua</span></a></li>
+		            <li class="active"><a href="#" data-nav-section="home" onmouseover="openAudio('quechua')" onmouseout="quechua.pause();"><span>Quechua</span></a></li>
 		            <li><a href="#" data-nav-section="que" onmouseover="openAudio('que');" onmouseout="que.pause();"><span>¿Que?</span></a></li>
 					<li><a href="#" data-nav-section="work" onmouseover="openAudio('como');" onmouseout="como.pause();"><span>¿Cómo?</span></a></li>
 		            <li><a href="#" data-nav-section="testimonials" onmouseover="openAudio('inspiracion');" onmouseout="inspiracion.pause();"><span>Inspiración</span></a></li>
@@ -373,13 +376,16 @@
 	<div class="flexslider">
 	  <ul class="slides">
 	    <li >
-	      <img src="images/baner1.gif"  />
+	      <img src="images/baner1.jpg"  />
 	    </li>
 	    <li>
 	      <img src="images/baner2.jpg" />
 	    </li>
 	    <li>
-	      <img src="images/baner3.jpg" />
+	      <img src="images/baner3.gif" />
+	    </li>
+		<li>
+	      <img src="images/baner4.jpg" />
 	    </li>
 	  </ul>
 	</div>
@@ -400,7 +406,7 @@
 				<div class="fh5co-block to-animate"  >
 					<div class="overlay-darker"></div>
 					<div class="overlay"></div>
-					<div class="fh5co-text" onmouseover="corpus.play()" onmouseout="corpus.pause();">
+					<div class="fh5co-text" onmouseover="openAudio('corpus')" onmouseout="corpus.pause();">
 						<img src="images/icons/foreign_language.png" class="icons_bottom">
 						<h2>CORPUS</h2>
 						<p>Queremos tu ayuda para tener el mas grande repositorio de audio de la lengua Quechua en el Mundo.</p>
@@ -450,16 +456,24 @@
 		<div class="container">
 			<div class="row">
 				
-				<div class="col-md-12 section-heading text-center">
-					<h2 class=""> ¿Qué hacemos?</h2>
+				<div class="col-md-12 section-heading text-center" style="margin-bottom: 1px;">
+					<h2 class="" onmouseout="que_hacemos.pause();" onmouseover="openAudio('que_hacemos')"> ¿Qué hacemos?</h2>
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1 subtext ">
-						<h3 style="text-align: justify;" >La misión de Siminchikkunarayku es preservar y proteger las lenguas en riesgo de extinción, especialmente los idiomas
+						<h3>Si perdemos nuestras lenguas perdemos un gran tesoro, por el contrario si nuestras lenguas florecen traerán grandes beneficios 
+						a la Nación entera, productos y servicios valorizados en varios puntos de PBI. Como si fuera poco lo anterior, el desarrollode nuestros idiomas 
+						consolidarán la inclusión y cohesión nacionales, garantizando el desarrollo humano sostenible y pacífico.</h3>
+						
+						</div>
+						
+						<div class="col-lg-6">
+						 <p style="text-align: justify;" >La misión de Siminchikkunarayku es preservar y proteger las lenguas en riesgo de extinción, especialmente los idiomas
 						sudamericanos, y fomentar el uso público de dichas lenguas, mediante la creación y/o uso de las tecnologías de la información y comunicación,
-						especialmente el desarrollo de la portabilidad computacional.
-						<br>
+						especialmente el desarrollo de la portabilidad computacional.</p>
+						</div>
+						<div class="col-lg-6" style="text-align: justify;" >
 						La visión de siminchikkunarayku es que todas las comunidades de hablantes de idiomas en riesgo de extinción, especialmente los idiomas sudamericanos,
-						tengan los médios tecnológicos para sostener y difundir su lengua.</h3>
+						tengan los médios tecnológicos para sostener y difundir su lengua.
 						</div>
 					</div>
 				</div>
@@ -482,8 +496,8 @@
 					<figure>
 						<img src="images/art/9.gif" alt="Free HTML5 Bootstrap Template by FREEHTML5.co" class="img-responsive" style="width:555px; height:459px;">
 						 
-						 <figcaption style="text-align: justify;" >Los resultados mas impresionantes de la portabilidad computacional de los idiomas son el asistente personal(como siri) y el traductor
-									vocal. Desarrollar esas herramientas es nuestro objetivo.
+						 <figcaption style="text-align: justify;" >Los resultados mas impresionantes de la portabilidad computacional de los idiomas son el asistente personal(como <a href="https://www.apple.com/es/ios/siri/" target="_blank">siri</a>) y el
+						 <a href="https://translate.google.com/?hl=es" target="_blank">traductor vocal</a>. Desarrollar esas herramientas es nuestro objetivo.
 						 </figcaption>
 					</figure>
 					 
@@ -501,7 +515,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate" onmouseout="como_lo_hacemos.pause();" onmouseover="como_lo_hacemos.openAudio()">¿Cómo lo hacemos?</h2>
+					<h2 class="to-animate" onmouseout="como_lo_hacemos.pause();" onmouseover="openAudio('como_lo_hacemos')">¿Cómo lo hacemos?</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext to-animate">
 							<h3>Unimos comunidades, investigadores, escritores, artistas, ingenieros y universidades de todo el Perú para obtener el mayor contenido escrito y visual sobre una milenaria lengua para el beneficio de todos.</h3>
@@ -682,7 +696,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate"  onmouseout="proyectos_seccion.pause();" onmouseover="proyectos_seccion.openAudio()" >Proyectos</h2>
+					<h2 class="to-animate"  onmouseout="proyectos_seccion.pause();" onmouseover="openAudio('proyectos_seccion')" >Proyectos</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext to-animate">
 							<h3>La creatividad de la comunidad nos ayuda a seguir creciendo para formar una mejor cultura.</h3>
@@ -693,24 +707,24 @@
 			<div class="row">
 				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate">
 					<img src="images/icons/audio_console.png" class="icons_bottom" >
-					<h3   onmouseout="proyectos_seccion.pause();" onmouseover="proyectos_seccion.openAudio()">CORPUS QUECHUA</h3>
+					<h3   onmouseout="proyectos_seccion.pause();" onmouseover="openAudio('proyectos_seccion')">CORPUS QUECHUA</h3>
 					<p style="font-size: 18px;">Repositorio de audio y de transcripciones de la lengua Quechua, disponible.</p>
 				</div>
 				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate"  >
 					<img src="images/icons/card_design.png" class="icons_bottom">
-					<h3   onmouseout="traductor_quechua.pause();" onmouseover="traductor_quechua.openAudio()">
+					<h3   onmouseout="traductor_quechua.pause();" onmouseover="openAudio('traductor_quechua')">
 					<a style="color:white;"  href="traductor.html">TRADUCTOR QUECHUA</a></h3> 
 					<p style="font-size: 18px;">El primer traductor de voz de la lengua Quechua disponible para todo el mundo.</p>
 				</div>
 
 				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate"  >
 					<img src="images/icons/radio.png" class="icons_bottom">
-					<h3  onmouseout="programas_radio.pause();" onmouseover="programas_radio.openAudio()">PROGRAMAS DE RADIO</h3>
+					<h3  onmouseout="programas_radio.pause();" onmouseover="openAudio('programas_radio')">PROGRAMAS DE RADIO</h3>
 					<p style="font-size: 18px;">La comunidad de radios que transmiten su programación en la lengua Quechua.</p>
 				</div>
 				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate"  >
 					<img src="images/icons/event.png" class="icons_bottom">
-					<h3  onmouseout="eventos.pause();" onmouseover="eventos.openAudio()">EVENTOS</h3>
+					<h3  onmouseout="eventos.pause();" onmouseover="openAudio('eventos')">EVENTOS</h3>
 					<p style="font-size: 18px;">  Eventos académicos, artísticos y culturales sobre la lengua Quechua.</p> 
 				</div>
 
@@ -751,10 +765,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate" onmouseout="nosotros_seccion.pause();" onmouseover="nosotros_seccion.openAudio()">Nosotros</h2>
+					<h2 class="to-animate" onmouseout="nosotros_seccion.pause();" onmouseover="openAudio('nosotros_seccion')">Nosotros</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3 onmouseout="nosotros_frase1.pause();" onmouseover="nosotros_frase1.openAudio()">Somos un equipo con amor por la cultura, las comunidades y lo nuestro.</h3>
+							<h3 onmouseout="nosotros_frase1.pause();" onmouseover="openAudio('nosotros_frase1')">Somos un equipo con amor por la cultura, las comunidades y lo nuestro.</h3>
 						</div>
 					</div>
 				</div>
@@ -845,28 +859,29 @@
 			</div>
 			<div class="row">
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="fh5co-counter to-animate" onmouseover="continente.openAudio()" onmouseout="continente.pause();">
+					<div class="fh5co-counter to-animate" onmouseover="openAudio('continente')" onmouseout="continente.pause();">
+					<div class="fh5co-counter to-animate" onmouseover="openAudio('continente')" onmouseout="continente.pause();">
 						<img src="images/icons/geography.png" >
 						<span class="fh5co-counter-number js-counter" data-from="0" data-to="1" data-speed="5000" data-refresh-interval="50">1</span>
 						<span class="fh5co-counter-label">Continente</span>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="fh5co-counter to-animate" onmouseover="paises.openAudio()" onmouseout="paises.pause();">
+					<div class="fh5co-counter to-animate" onmouseover="openAudio('paises')" onmouseout="paises.pause();">
 						<img src="images/icons/country.png" >
 						<span class="fh5co-counter-number js-counter" data-from="0" data-to="7" data-speed="5000" data-refresh-interval="50">7</span>
 						<span class="fh5co-counter-label">Paises</span>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="fh5co-counter to-animate" onmouseover="personas.openAudio()" onmouseout="personas.pause();">
+					<div class="fh5co-counter to-animate" onmouseover="openAudio('personas')" onmouseout="personas.pause();">
 						<img src="images/icons/group.png" >
 						<span class="fh5co-counter-number js-counter" data-from="0" data-to="7800000" data-speed="5000" data-refresh-interval="50">7'800,000</span>
 						<span class="fh5co-counter-label">Personas</span>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="fh5co-counter to-animate" onmouseover="lenguas.openAudio()" onmouseout="lenguas.pause();">
+					<div class="fh5co-counter to-animate" onmouseover="openAudio('lenguas')" onmouseout="lenguas.pause();">
 						<img src="images/icons/public_chat.png" >
 						<span class="fh5co-counter-number js-counter" data-from="0" data-to="1" data-speed="5000" data-refresh-interval="50">1</span>
 						<span class="fh5co-counter-label">Lenguas</span>
@@ -884,7 +899,7 @@
 			<div class="row">
 				<div class="col-md-12 section-heading text-center" style="margin-top: 50px;
 ">
-					<h2 class=""> Eventos</h2>
+					<h2 class="" onmouseout="eventos.pause();" onmouseover="openAudio('eventos')"> Eventos</h2>
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1 subtext ">
 						<h3>¡Muy pronto! el 21 de febrero del 2018 lanzaremos la primera versión de Qillqaq, ¡únete a esta fiesta!.
@@ -898,13 +913,12 @@
 			</div>
 			
 			<div class="row ">	
-			
-												
+									
 					<figure>
 						<img  src="images/evento.jpg"  class="img-responsive" style="margin-left: 10%;">
 						
 					</figure>
-					 
+					
 			</div>
 									
 			</div>	
@@ -922,9 +936,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate" onmouseover="contactanos_seccion.openAudio()"  onmouseout="contactanos_seccion.pause();">Contactanos</h2>
+					<h2 class="to-animate" onmouseover="openAudio('contactos')"  onmouseout="contactos_seccion.pause();">Contactanos</h2>
 					<div class="row">
-						<div onmouseover="contactanos_frase.openAudio() "  onmouseout="contactanos_frase.pause();"class="col-md-8 col-md-offset-2 subtext to-animate">
+						<div onmouseover="openAudio('contactanos_frase') "  onmouseout="contactanos_frase.pause();"vclass="col-md-8 col-md-offset-2 subtext to-animate">
 							<h3>Ayúdanos a conservar la lengua nativa más hablada en América Latina.</h3>
 						</div>
 					</div>
