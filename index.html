@@ -1,0 +1,1106 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+	<html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Quechua &mdash;  by Nelsi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="Quechua, Catolica, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	PLATAFORMA QUECHUA
+	DESIGNED & DEVELOPED by Nelsi Melgarejo
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+  <!-- Modernizr -->
+  <script src="js/modernizr.js"></script>
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
+	<link rel="stylesheet" id="theme-switch" href="css/style.css">
+	<link rel="stylesheet" id="theme-switch" href="css/slick.css">
+	<link rel="stylesheet" id="theme-switch" href="css/slick-theme.css">
+	<!-- End demo purposes only -->
+
+
+
+	<style type="text/css">
+	#musica {height:0;width:0;}
+	</style>
+	
+	<script>
+	// Array con todas las imágenes que deseamos que se vayan cambiando a
+	// cada clic
+	var imagenes=Array("images/icons/image1.png","images/icons/image2.png");
+	var imagenVisible=0;
+ 
+	// Función que cambia la imagen actual por la siguiente
+	function cambiar(img)
+	{
+		imagenVisible++;
+		if(imagenVisible>=imagenes.length)
+		{
+			imagenVisible=0;
+		}
+		img.src=imagenes[imagenVisible];
+		cargarSiguienteImagen();
+	}
+ 
+	/**
+	 * Esta función carga la siguiente imagen para no tener que esperar su carga
+	 * en el momento de mostrarla.
+	 */
+	function cargarSiguienteImagen()
+	{
+		if((imagenVisible+1)<imagenes.length)
+		{
+			console.log(imagenVisible+1);
+			var imgTmp=new Image();
+			imgTmp.src=imagenes[imagenVisible+1];
+		}
+	}
+ 
+	window.onload=function() {
+		cargarSiguienteImagen();
+	}
+	
+	
+	
+	
+	function openAudio(word){
+			
+		    var imagen = document.getElementById('imagen').src;
+			var flag = "0";
+			if (imagen.includes('1')){
+				flag = 1;
+			} else {
+				flag = 0;
+			}			
+		
+			if (flag == "1"){
+				if (word == "quechua") quechua.play();
+				if (word == "que") que.play();
+				if (word == "como") como.play();
+				if (word == "inspiracion") inspiracion.play();
+				if (word == "proyectos") proyectos.play();
+				if (word == "nosotros") nosotros.play();
+				if (word == "eventos") eventos.play();
+				if (word == "contactos") contactos.play();
+				if (word == "idiomas") idiomas.play();
+				
+				if (word == "corpus") corpus.play();
+				if (word == "investigaciones") investigaciones.play();
+				if (word == "proyectos_menu") proyectos_menu.play();
+				if (word == "como_lo_hacemos") como_lo_hacemos.play();
+				if (word == "que_nos_inspira") que_nos_inspira.play();
+				
+				if (word == "proyectos_seccion") proyectos_seccion.play();
+				if (word == "corpus_quechua") corpus_quechua.play();
+				if (word == "traductor_quechua") traductor_quechua.play();
+				if (word == "programas_radio") programas_radio.play();
+				//if (word == "eventos") que_nos_inspira.play();
+				
+				if (word == "nosotros_seccion") nosotros_seccion.play();
+				if (word == "nosotros_frase1") nosotros_frase1.play();
+				
+				if (word == "escritores") escritores.play();
+				if (word == "artistas") artistas.play();
+				if (word == "comunidad") comunidad.play();
+				if (word == "investigadores_seccion") investigadores_seccion.play();
+				if (word == "ingenieros") ingenieros.play();
+				if (word == "universidades") universidades.play();
+				
+				if (word == "contactanos_seccion") contactanos_seccion.play();
+				if (word == "contactanos_frase") contactanos_frase.play();
+				
+				if (word == "estadisticas_seccion") estadisticas_seccion.play();
+				if (word == "continente") continente.play();
+				if (word == "paises") paises.play();
+				if (word == "personas") personas.play();
+				if (word == "lenguas") lenguas.play();
+			}
+	}
+		
+	</script>
+	
+	<style>
+	img {cursor:pointer;}
+	</style>
+	
+	<script type="text/javascript">
+	var quechua = new Audio();
+	var que = new Audio();
+	var como = new Audio();
+	var inspiracion = new Audio();
+	var proyectos = new Audio();
+	var nosotros = new Audio();
+	var eventos = new Audio();
+	var idiomas = new Audio();
+	var contactos = new Audio();
+
+	var corpus = new Audio();
+	var investigaciones = new Audio();
+	var proyectos_menu = new Audio();
+	var como_lo_hacemos = new Audio();
+	var que_nos_inspira = new Audio();
+
+	var proyectos_seccion = new Audio();
+	var corpus_quechua = new Audio();
+	var traductor_quechua = new Audio();
+	var programas_radio = new Audio();
+	var eventos = new Audio();
+
+	var nosotros_seccion = new Audio();
+	var nosotros_frase1 = new Audio();
+
+
+	var escritores = new Audio();
+	var artistas = new Audio();
+	var comunidad = new Audio();
+	var investigadores_seccion = new Audio();
+	var ingenieros = new Audio();
+	var universidades = new Audio();
+
+
+	var contactanos_seccion = new Audio();
+	var contactanos_frase = new Audio();
+
+	var estadisticas_seccion = new Audio();
+	var continente = new Audio();
+	var paises = new Audio();
+	var personas = new Audio();
+	var lenguas = new Audio();
+
+	quechua.src = 'audio/siminchikmanta.mp3';
+	como.src = 'audio/como.mp3';
+	que.src = 'audio/que.mp3';
+	inspiracion.src = 'audio/munayninchik.mp3';
+	proyectos.src = 'audio/ruwayninchik.mp3';
+	nosotros.src = 'audio/nuqanchik.mp3';
+	eventos.src = 'audio/llamkayninchikkuna.mp3';
+	idiomas.src = 'audio/idiomas.mp3';
+	contactos.src = 'audio/riqsinakusun_1.mp3';
+
+	corpus.src = 'audio/qillqakuna_uyariykunapas_1.mp3';
+	investigaciones.src = 'audio/yachay_maskapaykuna.mp3';
+	proyectos_menu.src = 'audio/ruwaykuna.mp3';
+	como_lo_hacemos.src = 'audio/imaynatam_ruwasunchik.mp3';
+	que_nos_inspira.src = 'audio/imam_sunqunchikta_kuyuchin.mp3';
+
+	proyectos_seccion.src = 'audio/ruwayninchikkuna.mp3';
+	corpus_quechua.src = 'audio/qillqakuna_uyariykunapas.mp3';
+	traductor_quechua.src = 'audio/siminchik_tikrachik.mp3';
+	programas_radio.src = 'audio/wayra_wasipi_rimaykuna.mp3';
+	eventos.src = 'audio/llamkayninchikkuna.mp3';
+
+
+	nosotros_seccion.src = 'audio/nuqaykumanta.mp3';
+	nosotros_frase1.src = 'audio/frase1.mp3';
+
+	escritores.src = 'audio/qillqaqkuna.mp3';
+	artistas.src = 'audio/takiqkuna.mp3';
+	comunidad.src = 'audio/runamasinchikkuna.mp3';
+	investigadores_seccion.src = 'audio/yachay_qatipaqkuna.mp3';
+	ingenieros.src = 'audio/qispichikkuna.mp3';
+	universidades.src = 'audio/hatun_yachay_wasikuna.mp3';
+
+	contactanos_seccion.src = 'audio/riqsinakusun_2.mp3';
+	contactanos_frase.src = 'audio/frase2.mp3';
+
+	estadisticas_seccion.src = 'audio/yupaykuna.mp3';
+	continente.src = 'audio/tiqsimuyu.mp3';
+	paises.src = 'audio/suyukuna.mp3';
+	personas.src = 'audio/runakuna.mp3';
+	lenguas.src = 'audio/simikuna.mp3';
+
+	</script>
+
+
+
+	
+ <!-- Demo CSS -->
+  <link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+  <!-- Modernizr -->
+  <script src="js/modernizr.js"></script>
+
+  <style>
+    .flexslider {
+      margin-bottom: 10px;
+    }
+
+    .flex-control-nav {
+      position: relative;
+      bottom: auto;
+    }
+
+    .custom-navigation {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+
+    margin-top: -430px;    }
+
+@media screen and (max-width: 1100px) {
+    .custom-navigation {
+    margin-top: -15%;}
+}
+@media screen and (max-width: 440px) {
+    
+#fh5co-home{
+	height: 250px;
+}
+
+.flexslider{
+	display: none;
+}
+}
+
+    .custom-navigation > * {
+      display: table-cell;
+    }
+
+    .custom-navigation > a {
+      width: 50px;
+    }
+
+    .custom-navigation .flex-next {
+      text-align: right;
+    }
+  </style>
+
+
+	</head>
+	<body>
+<section>
+	
+	<div style="background: #00a7a3; height:50px;">
+				<!-- <div class="row"> -->
+			<div class="search col-xs-12 col-sm-6 col-md-6 col-lg-3"">
+			  <input id="search" class="search-input " type="text"> <i style="color:white;" class="icon-search2" aria-hidden="true"></i>
+			</div> 
+    </div>
+	
+	</section>
+
+
+	<header role="banner" id="fh5co-header">
+
+			<div class="container">
+
+				<!-- <div class="row"> -->
+
+			    <nav class="navbar navbar-default">
+		        <div class="navbar-header">
+					
+		        	<!-- Mobile Toggle Menu Button -->
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		         <a class="navbar-brand" style = "background-image: url(images/logoreal.png); width: 60px; height: 60px;" href="index.html">
+				 <p style="  text-indent: 60px;   text-transform: uppercase; color: #000; font-size: 18px; ">siminchikkunarayku</p></a> 
+				 </div>
+				
+				
+		        <div id="navbar" class="navbar-collapse collapse">
+		          <ul class="nav navbar-nav navbar-right">
+		            <li class="active"><a href="#" data-nav-section="home" onmouseover="quechua.play()" onmouseout="quechua.pause();"><span>Quechua</span></a></li>
+		            <li><a href="#" data-nav-section="que" onmouseover="openAudio('que');" onmouseout="que.pause();"><span>¿Que?</span></a></li>
+					<li><a href="#" data-nav-section="work" onmouseover="openAudio('como');" onmouseout="como.pause();"><span>¿Cómo?</span></a></li>
+		            <li><a href="#" data-nav-section="testimonials" onmouseover="openAudio('inspiracion');" onmouseout="inspiracion.pause();"><span>Inspiración</span></a></li>
+		            <li><a href="#" data-nav-section="services" onmouseover="openAudio('proyectos');" onmouseout="proyectos.pause();" ><span>Proyectos</span></a></li>
+		            <li><a href="#" data-nav-section="about" onmouseover="openAudio('nosotros');" onmouseout="nosotros.pause();" ><span>Nosotros</span></a></li>
+					<li><a href="#" data-nav-section="eventos" onmouseover="openAudio('eventos');" onmouseout="eventos.pause();" ><span>Eventos</span></a></li>
+		            <!--<li><a href="#" data-nav-section="contact" onmouseout="contactos.pause();" onmouseover="contactos.play()"><span>Contactos</span></a></li>-->
+					<li><a href="#" data-nav-section="idiomas" onmouseover="openAudio('idiomas');" onmouseout="idiomas.pause();" ><span>Idioma</span></a></li>
+					<li><img id="imagen" src="images/icons/image1.png" onclick="cambiar(this);" class="img-responsive; background-position:center; " style="width:20px; height:20px; margin-top: 20px;"></li>
+		          </ul>
+		        </div>
+			    </nav>
+			  <!-- </div> -->
+		  </div>
+	</header>
+<!-- menu home -->
+	
+	<section id="fh5co-home"  data-section="home"  data-stellar-background-ratio="0.5">
+	
+
+
+	<div class="flexslider">
+	  <ul class="slides">
+	    <li >
+	      <img src="images/baner1.gif"  />
+	    </li>
+	    <li>
+	      <img src="images/baner2.jpg" />
+	    </li>
+	    <li>
+	      <img src="images/baner3.jpg" />
+	    </li>
+	  </ul>
+	</div>
+	<div class="custom-navigation">
+	  <a href="#" class="flex-prev">Prev</a>
+	  <div class="custom-controls-container"></div>
+	  <a href="#" class="flex-next">Next</a>
+	</div>
+		
+
+		
+	</section>
+
+	
+	<section id="fh5co-intro">
+		<div class="container">
+			<div class="row row-bottom-padded-lg">
+				<div class="fh5co-block to-animate"  >
+					<div class="overlay-darker"></div>
+					<div class="overlay"></div>
+					<div class="fh5co-text" onmouseover="corpus.play()" onmouseout="corpus.pause();">
+						<img src="images/icons/foreign_language.png" class="icons_bottom">
+						<h2>CORPUS</h2>
+						<p>Queremos tu ayuda para tener el mas grande repositorio de audio de la lengua Quechua en el Mundo.</p>
+						<p><a href="#" class="btn btn-primary">Ayudanos</a></p>
+					</div>
+				</div>
+				<div class="fh5co-block to-animate" >
+					<div class="overlay-darker"></div>
+					<div class="overlay"></div>
+					<div class="fh5co-text" onmouseover="openAudio('investigaciones')" onmouseout="investigaciones.pause();">
+						<img src="images/icons/project.png" class="icons_bottom">
+						<h2>INVESTIGACIONES</h2>
+						<p>Averigua que investigación hay relacionadas a la lengua Quechua o sube tu investigación con nosotros.</p>
+						<p><a href="#" class="btn btn-primary">Entrar</a></p>
+					</div>
+				</div>
+				<div class="fh5co-block to-animate" >
+					<div class="overlay-darker"></div>
+					<div class="overlay"></div>
+					<div class="fh5co-text" onmouseover="openAudio('proyectos')" onmouseout="proyectos_menu.pause();">
+						<img src="images/icons/subproject.png" class="icons_bottom">
+						<h2>PROYECTOS</h2>
+						<p>¿Tienes un proyecto? publica un video y compartelo con la comunidad mas grande de voluntarios de nuestras lenguas.</p>
+						<p><a href="#" class="btn btn-primary">PUBLICAR</a></p>
+					</div>
+				</div>
+			</div>
+			
+	<!--  video -->	
+	
+		
+		<div class="delimitador">
+		<div class="contenedor">
+		<iframe src="https://www.youtube.com/embed/jMWZywjNRrs" frameborder="0" allowfullscreen="allowfullscreen" ></iframe>
+		</div>
+	
+		</div>	
+			
+	
+			
+		</div>
+	</section>
+	
+<!-- que deseamos -->
+	<section id="fh5co-que" data-section="que">
+		<div class="que-overlay"></div>
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-12 section-heading text-center">
+					<h2 class=""> ¿Qué hacemos?</h2>
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1 subtext ">
+						<h3 style="text-align: justify;" >La misión de Siminchikkunarayku es preservar y proteger las lenguas en riesgo de extinción, especialmente los idiomas
+						sudamericanos, y fomentar el uso público de dichas lenguas, mediante la creación y/o uso de las tecnologías de la información y comunicación,
+						especialmente el desarrollo de la portabilidad computacional.
+						<br>
+						La visión de siminchikkunarayku es que todas las comunidades de hablantes de idiomas en riesgo de extinción, especialmente los idiomas sudamericanos,
+						tengan los médios tecnológicos para sostener y difundir su lengua.</h3>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+				<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<figure>
+						<img src="images/art/lenguas.jpg" alt="Free HTML5 Bootstrap Template by FREEHTML5.co" class="img-responsive" style="width:555px; height:459px;">
+						 <figcaption style="text-align: justify;">El perú es un pais multicultural, cerca del 10% de la población habla una lengua nativa; cada color en la mapa representa una familia de lenguas.
+						 Actualmente 47 lenguas indígenas aun sobreviven, todas estan el peligro de extinción.
+						 </figcaption>
+					</figure>
+					 
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<figure>
+						<img src="images/art/9.gif" alt="Free HTML5 Bootstrap Template by FREEHTML5.co" class="img-responsive" style="width:555px; height:459px;">
+						 
+						 <figcaption style="text-align: justify;" >Los resultados mas impresionantes de la portabilidad computacional de los idiomas son el asistente personal(como siri) y el traductor
+									vocal. Desarrollar esas herramientas es nuestro objetivo.
+						 </figcaption>
+					</figure>
+					 
+				</div>
+			</div>
+					
+			</div>
+		
+	</section>
+
+<!-- como lo hacemos -->
+
+	<section id="fh5co-work" data-section="work" style="background: url(images/micro2.jpg); background-size: cover; background-attachment: fixed; background-position: center; background-repeat:no-repeat; min-height: 20px;" >
+	<div class="work-overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate" onmouseout="como_lo_hacemos.pause();" onmouseover="como_lo_hacemos.openAudio()">¿Cómo lo hacemos?</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>Unimos comunidades, investigadores, escritores, artistas, ingenieros y universidades de todo el Perú para obtener el mayor contenido escrito y visual sobre una milenaria lengua para el beneficio de todos.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row-bottom-padded-sm">
+				<div class="col-md-3 col-sm-6 col-xxs-12">
+					<a href="images/work_1.jpg" class="fh5co-project-item image-popup to-animate" onmouseover="openAudio('escritores')" onmouseout="escritores.pause();">
+						<img src="images/work_1.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Escritores</h2>
+						<!-- <span>Branding</span> -->
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xxs-12">
+					<a href="images/work_2.jpg" class="fh5co-project-item image-popup to-animate" onmouseover="openAudio('artistas')" onmouseout="artistas.pause();">
+						<img src="images/work_2.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Artistas</h2>
+						<!-- <span>Web</span> -->
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xxs-12">
+					<a href="images/work_3.jpg" class="fh5co-project-item image-popup to-animate" onmouseover="openAudio('comunidad')" onmouseout="comunidad.pause();">
+						<img src="images/work_3.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Comunidad</h2>
+						<!-- <span>Web</span> -->
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xxs-12">
+					<a href="images/work_4.jpg" class="fh5co-project-item image-popup to-animate" onmouseover="openAudio('investigadores_seccion')" onmouseout="investigadores_seccion.pause();">
+						<img src="images/work_4.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Investigadores</h2>
+						<!-- <span>UI/UX</span> -->
+						</div>
+					</a>
+				</div>
+				
+
+				
+			
+
+				
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- que nos inspira -->
+
+	<section id="fh5co-testimonials" data-section="testimonials">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center" >
+					<h2 class="to-animate" onmouseout="que_nos_inspira.pause();" onmouseover="openAudio('que_nos_inspira')">¿Qué nos inspira?</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>Los resultados más impresionantes de la portabilidad computacional de los iLas millones de personas que cada día crean historias que se escriben y se escuchan a lo largo de América Latina.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			
+			<div class="row data" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'> 
+<!-- luis-->
+				<div class="fondo">
+					<div class="box-testimony">
+						<blockquote class="to-animate-2">
+							<p>&ldquo;Mi tradición, mi herencia cultural, mi familia me inspiraron para desarrollar la propuesta que ahora es la iniciativa SIMINCHIKKUNARAYKU. Estoy convencido que podemos convertir en poliglotas a todo los peruanos.&rdquo;</p>
+						</blockquote>
+						<div class="author to-animate">
+							<figure><img src="images/person1.jpg" alt="Person"></figure>
+							<p>
+							Atuq Kamachikuq <br> 
+							<a href="https://www.youtube.com/channel/UCtr39nRxoLgf6JFEIuUykkg" target="_blank">Pontificia Universidad Católica del Perú</a>
+							<span class="subtext">Investigador Principal</span>
+							</p>
+						</div>
+					</div>
+				</div>
+
+<!-- ronald-->
+				<div class="fondo">
+					<div class="box-testimony">
+						<blockquote class="to-animate-2">
+							<p>&ldquo;Me emociona ser parte de una iniciativa que busca proveer acceso a los quechua hablantes a la vasta informacion disponible en esta era digital usando nuestra lengua ancestral y software inteligente.&rdquo;</p>
+						</blockquote>
+						<div class="author to-animate">
+							<figure><img src="images/ronald.png" alt="Person"></figure>
+							<p>
+							Ronald Ahmed Cárdenas Acosta <br> <a href="https://twitter.com/rjzevallos" target="_blank">Universidad Nacional de Ingenieria</a> <span class="subtext">Investigador Asociado</span>
+							</p>
+						</div>
+					</div>
+				</div>
+<!-- nelsi-->
+				<div class="fondo">
+					<div class="box-testimony">
+						<blockquote class="to-animate-2">
+							<p>&ldquo;Sueño que mi lengua materna viva siempre, que todos  los peruanos conozcan y valoren el Quechua.&rdquo;</p>
+
+
+						</blockquote>
+						<div class="author to-animate">
+							<figure><img src="images/person2.jpg" alt="Person"></figure>
+							<p>
+							Nelsi Melgarejo Vergara <br> <a href="https://twitter.com/nelsibelly" target="_blank">Universidad Nacional del Callao</a> <span class="subtext">Tesista</span>
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+<!-- lorenzo-->
+				<div class="fondo">
+					<div class="box-testimony">
+						<blockquote class="to-animate-2">
+							<p>&ldquo;Construir un país intercultural sin exclusión ni discriminación, donde los hablantes de las lenguas originarias tienen las mismas oportunidades de desarrollo en su propia lengua &rdquo;</p>
+						</blockquote>
+						<div class="author to-animate">
+							<figure><img src="images/person4.jpg" alt="Person"></figure>
+							<p>
+							Lorenzo Ruiz De La Vega Tenorio <br> <a href="https://twitter.com/rjzevallos" target="_blank">Universidad Antonio Ruiz de Montoya</a> <span class="subtext">Investigador Asociado</span>
+							</p>
+						</div>
+					</div>
+				</div>	
+				<!-- Rodo-->
+				<div class="fondo">
+					<div class="box-testimony">
+						<blockquote class="to-animate-2">
+							<p>&ldquo;Ayudar a las millones de personas Quechua hablantes a seguir conservando una de las lenguas más representativas de América Latina. &rdquo;</p>
+						</blockquote>
+						<div class="author to-animate">
+							<figure><img src="images/person3.jpg" alt="Person"></figure>
+							<p>
+							Rodolfo Zevallos Salazar <br> <a href="https://twitter.com/rjzevallos" target="_blank">Universidad Nacional del Callao</a> <span class="subtext">Investigador Asociado</span>
+							</p>
+						</div>
+					</div>
+				</div>	
+
+<!-- Reynaldo-->
+				<div class="fondo">
+					<div class="box-testimony">
+						<blockquote class="to-animate-2">
+							<p>&ldquo; El mundo necesita comunicación eficiente y en tiempo record una de las formas es introduciendo toda las lenguas a  la portabilidad computacional. &rdquo;</p>
+						</blockquote>
+						<div class="author to-animate">
+							<figure><img src="images/reynaldo.png" alt="Person"></figure>
+							<p>
+							Reynaldo Baquerizo <br> <a href="https://twitter.com/rjzevallos" target="_blank">Pontificia Universidad Católica del Perú</a> <span class="subtext">Investigador Asociado</span>
+							</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+			
+
+		
+	</section>
+
+
+	<section id="fh5co-services" data-section="services" style="background: url(images/micro.jpg); background-size: cover; background-attachment: fixed; background-position: center; background-repeat:no-repeat; min-height: 20px;">
+		<div class="services-overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate"  onmouseout="proyectos_seccion.pause();" onmouseover="proyectos_seccion.openAudio()" >Proyectos</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>La creatividad de la comunidad nos ayuda a seguir creciendo para formar una mejor cultura.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate">
+					<img src="images/icons/audio_console.png" class="icons_bottom" >
+					<h3   onmouseout="proyectos_seccion.pause();" onmouseover="proyectos_seccion.openAudio()">CORPUS QUECHUA</h3>
+					<p style="font-size: 18px;">Repositorio de audio y de transcripciones de la lengua Quechua, disponible.</p>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate"  >
+					<img src="images/icons/card_design.png" class="icons_bottom">
+					<h3   onmouseout="traductor_quechua.pause();" onmouseover="traductor_quechua.openAudio()">
+					<a style="color:white;"  href="traductor.html">TRADUCTOR QUECHUA</a></h3> 
+					<p style="font-size: 18px;">El primer traductor de voz de la lengua Quechua disponible para todo el mundo.</p>
+				</div>
+
+				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate"  >
+					<img src="images/icons/radio.png" class="icons_bottom">
+					<h3  onmouseout="programas_radio.pause();" onmouseover="programas_radio.openAudio()">PROGRAMAS DE RADIO</h3>
+					<p style="font-size: 18px;">La comunidad de radios que transmiten su programación en la lengua Quechua.</p>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate"  >
+					<img src="images/icons/event.png" class="icons_bottom">
+					<h3  onmouseout="eventos.pause();" onmouseover="eventos.openAudio()">EVENTOS</h3>
+					<p style="font-size: 18px;">  Eventos académicos, artísticos y culturales sobre la lengua Quechua.</p> 
+				</div>
+
+				</div>
+
+				<div class="row"> 
+				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate">
+				<a href="https://es.duolingo.com/" target="_blank">
+					<img src="images/icons/duolingo.png" class="icons_bottom" ></a>
+					<h3   >DUOLINGO</h3>
+					<p  style="font-size: 18px;">Construiremos cursos de Quechua para hablantes de otros idiomas Y cursos de Inglés y Chino Mandarin para Quechua hablantes.</p>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate"  >
+					<a href="http://mozillanativo.org/" target="_blank" ><img src="images/icons/firefox.png" class="icons_bottom"></a>
+					<h3   >FIREFOX</h3>
+					<p style="font-size: 18px;">Respaldamos la iniciativa de Mozilla Nativo.</p>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate"  >
+					<a href="https://es.libreoffice.org/" target="_blank"><img src="images/icons/libreoffice.png" class="icons_bottom"></a>
+					<h3 >LIBRE OFFICE QUECHUA</h3>
+					<p style="font-size: 18px;">Contribuimos al mantenimiento de procesadores de texto.</p>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate"  >
+					<a href="https://play.google.com/store/apps/details?id=com.ketanolab.simidic&hl=es_419" target="_blank"><img src="images/icons/simidic.png" class="icons_bottom"></a>
+					<h3>SIMIDIC</h3>
+					<p style="font-size: 18px;">Primer diccionario de Quechua online creado por ketanolap.</p>
+				</div>
+
+				
+
+			</div>
+			
+	</section>
+		</div>
+	</section>
+	
+	<section id="fh5co-about" data-section="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate" onmouseout="nosotros_seccion.pause();" onmouseover="nosotros_seccion.openAudio()">Nosotros</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3 onmouseout="nosotros_frase1.pause();" onmouseover="nosotros_frase1.openAudio()">Somos un equipo con amor por la cultura, las comunidades y lo nuestro.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row data " data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
+<!-- luis -->
+				<div class="fondo">
+					<div class="fh5co-person text-center to-animate ">
+						<figure><img src="images/person1.jpg" alt="Image"></figure>
+						<h3>Atuq Kamachikuq</h3>
+						<span class="fh5co-position">Investigador Principal</span>
+						<p>Experto en Seguridad Eléctrica, TIC para el Desarrollo Rural, Telecomunicaciones Rurales, Sistemas de Información y Aplicaciones de Software de Código Abierto para Sistemas de Transporte Inteligente, Monitoreo de Vida Silvestre y Lenguas en Peligro.</p>
+						<ul class="social social-circle">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</div>
+				</div>
+<!-- Ronal -->
+				<div class="fondo">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/ronald.png" alt="Image"></figure>
+						<h3>Ronald Ahmed Cárdenas Acosta</h3>
+						<span class="fh5co-position">Investigador Asociado</span>
+						<p>Bachiller en Ing Mecatronica por la Universidad Nacional de Ingenieria, con experiencia en investigacion en Inteligencia Artificial aplicada a robótica autónoma, visión computacional, radares meteorológicos, texto y voz. Actualmente enfocado en reconocimiento de voz y sistemas inteligentes de pregunta respuesta (Question Answering).</p>
+						<ul class="social social-circle">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</div>
+				</div>
+<!-- nelsi -->
+				<div class="fondo">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/person2.jpg" alt="Image"></figure>
+						<h3>Nelsi Melgarejo Vergara</h3>
+						<span class="fh5co-position">Tesista</span>
+						<p>Bachiller de la carrera de ingeniería de sistemas altamente creativa, con iniciativa y puntualidad, asumo con responsabilidad los retos y metas que la institución me plantee; adaptabilidad al cambio, facilidad para trabajar en equipo, así como para resolver problemas eficientemente.</p>
+						<ul class="social social-circle">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-github"></i></a></li>
+						</ul>
+					</div>
+				</div>
+<!-- rodo -->			
+				<div class="fondo">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/person3.jpg" alt="Image"></figure>
+						<h3>Rodolfo Zevallos Salazar</h3>
+						<span class="fh5co-position">Investigador Asociado</span>
+						<p>Investigador dedicado a la investigación científica y al desarrollo de software, fomentando la investigación sobre
+						Inteligencia artificial e innovación de aplicación para el cambio social en el país.</p>
+						<ul class="social social-circle">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</div>
+				</div>
+<!-- lorenzo -->
+				<div class="fondo">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/person2.jpg" alt="Image"></figure>
+						<h3>Nelsi Melgarejo Vergara</h3>
+						<span class="fh5co-position">Tesista</span>
+						<p>Bachiller de la carrera de ingeniería de sistemas altamente creativa, con iniciativa y puntualidad, asumo con responsabilidad los retos y metas que la institución me plantee; adaptabilidad al cambio, facilidad para trabajar en equipo, así como para resolver problemas eficientemente.</p>
+						<ul class="social social-circle">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-github"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="fh5co-counters" style="background: url(images/libros.png); background-attachment: fixed;"  data-stellar-background-ratio="0.5">
+		<div class="fh5co-overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center to-animate">
+					<h2 onmouseover="estadisticas_seccion.play()" onmouseout="estadisticas_seccion.pause();">Estadísticas</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="fh5co-counter to-animate" onmouseover="continente.openAudio()" onmouseout="continente.pause();">
+						<img src="images/icons/geography.png" >
+						<span class="fh5co-counter-number js-counter" data-from="0" data-to="1" data-speed="5000" data-refresh-interval="50">1</span>
+						<span class="fh5co-counter-label">Continente</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="fh5co-counter to-animate" onmouseover="paises.openAudio()" onmouseout="paises.pause();">
+						<img src="images/icons/country.png" >
+						<span class="fh5co-counter-number js-counter" data-from="0" data-to="7" data-speed="5000" data-refresh-interval="50">7</span>
+						<span class="fh5co-counter-label">Paises</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="fh5co-counter to-animate" onmouseover="personas.openAudio()" onmouseout="personas.pause();">
+						<img src="images/icons/group.png" >
+						<span class="fh5co-counter-number js-counter" data-from="0" data-to="7800000" data-speed="5000" data-refresh-interval="50">7'800,000</span>
+						<span class="fh5co-counter-label">Personas</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="fh5co-counter to-animate" onmouseover="lenguas.openAudio()" onmouseout="lenguas.pause();">
+						<img src="images/icons/public_chat.png" >
+						<span class="fh5co-counter-number js-counter" data-from="0" data-to="1" data-speed="5000" data-refresh-interval="50">1</span>
+						<span class="fh5co-counter-label">Lenguas</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+<!-- eventos-->
+<section id="fh5co-eventos" data-section="eventos">
+    <div class="eventos-overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center" style="margin-top: 50px;
+">
+					<h2 class=""> Eventos</h2>
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1 subtext ">
+						<h3>¡Muy pronto! el 21 de febrero del 2018 lanzaremos la primera versión de Qillqaq, ¡únete a esta fiesta!.
+						
+						</h3>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+			<div class="row ">	
+			
+												
+					<figure>
+						<img  src="images/evento.jpg"  class="img-responsive" style="margin-left: 10%;">
+						
+					</figure>
+					 
+			</div>
+									
+			</div>	
+				
+			
+					
+			</div>
+</section>
+
+
+
+<!-- contactano-->
+	<section id="fh5co-contact" data-section="contact">
+		<div class="contact-overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate" onmouseover="contactanos_seccion.openAudio()"  onmouseout="contactanos_seccion.pause();">Contactanos</h2>
+					<div class="row">
+						<div onmouseover="contactanos_frase.openAudio() "  onmouseout="contactanos_frase.pause();"class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>Ayúdanos a conservar la lengua nativa más hablada en América Latina.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section>
+			<div class="row row-bottom-padded-md">
+				<div class="col-lg-6 to-animate">
+					<h3>Información de contacto</h3>
+					<ul class="fh5co-contact-info">
+						<li class="fh5co-contact-address ">
+						<img src="images/icons/home.png" class="icons_bottom">
+							Av. Universitaria 1801, San Miguel Lima - Perú
+						</li>
+						<li><img src="images/icons/phone_book.png" class="icons_bottom"> (53) 626-2000</li>
+						<li><img src="images/icons/mail.png" class="icons_bottom"></i>qichwa@pucp.edu.pe</li>
+						<!-- <li><i class="icon-globe"></i> <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></li> -->
+					</ul>
+				</div>
+				<div class="col-lg-6 to-animate">	
+					
+						<h3>Formulario de contacto</h3>
+						<div class="form-group ">
+							<label for="name" class="sr-only">Nombre</label>
+							<input id="name" class="form-control" placeholder="Nombre" type="text">
+						</div>
+						<div class="form-group ">
+							<label for="email" class="sr-only">Email</label>
+							<input id="email" class="form-control" placeholder="Email" type="email">
+						</div>
+						<div class="form-group ">
+							<label for="phone" class="sr-only">Teléfono</label>
+							<input id="phone" class="form-control" placeholder="Teléfono" type="text">
+						</div>
+						<div class="form-group ">
+							<label for="message" class="sr-only">Mensaje</label>
+							<textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Mensaje"></textarea>
+						</div>
+						<div class="form-group ">
+							<input class="btn btn-primary btn-lg" value="Enviar" type="submit">
+						</div>
+					
+				</div>
+	
+
+					
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	<!--	<div id="map" class="to-animate"></div> -->
+	</section>
+	
+	
+	<footer id="footer" role="contentinfo">
+		<a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
+		<div class="container">
+			<div class="">
+				<div class="col-md-12 text-center">
+					<p>&copy; Consorcio de universidades.<br>Creado por <a href="https://twitter.com/nelsibelly" target="_blank">Nelsi Melgarejo</a></p>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<ul class="social social-circle">
+						<li><a href="#"><i class="icon-twitter"></i></a></li>
+						<li><a href="https://www.facebook.com/Kamachikuq"><i class="icon-facebook"></i></a></li>
+						<li><a href="https://www.youtube.com/channel/UCtr39nRxoLgf6JFEIuUykkg"><i class="icon-youtube"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js">
+	</script> 
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js">
+	</script>
+	<script type="text/javascript" src="js/slick/slick.min.js"></script>
+	
+
+
+	<script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+      	dots : true,
+      	speed: 1000,
+      	autoplay: true
+      });
+    });
+  </script>
+
+
+	<!-- jQuery -->
+	<!-- <script src="js/jquery.min.js"></script> -->
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Counter -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script> 
+
+
+
+	<script type="text/javascript" src="js/prism.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script src="css/slick.min.js"></script> 
+
+	<!-- Google Map -->
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script> -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false">
+	</script>
+
+
+
+	<script src="js/google_map.js"></script>
+
+	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
+	<script src="js/jquery.style.switcher.js"></script>
+	  <script defer src="js/jquery.flexslider.js"></script>
+
+  <script defer src="js/demo.js"></script>
+	<script>
+		$(function(){
+			$('#colour-variations ul').styleSwitcher({
+				defaultThemeId: 'theme-switch',
+				hasPreview: false,
+				cookie: {
+		          	expires: 30,
+		          	isManagingLoad: true
+		      	}
+			});	
+			$('.option-toggle').click(function() {
+				$('#colour-variations').toggleClass('sleep');
+			});
+		});
+	</script>
+	<!-- End demo purposes only -->
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+  
+
+	<script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        controlsContainer: $(".custom-controls-container"),
+        customDirectionNav: $(".custom-navigation a"),
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+  
+  <script type="text/javascript">
+  	$(document).ready(function() {
+    $('.data').slick();
+	});
+  </script>
+
+	</body>
+</html>
+
