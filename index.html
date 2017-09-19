@@ -220,7 +220,7 @@
 
 	quechua.src = 'audio/siminchikmanta.mp3';
 	como.src = 'audio/como.mp3';
-	que.src = 'audio/Que.mp3';
+	que.src = 'audio/que.mp3';
 	inspiracion.src = 'audio/munayninchik.mp3';
 	proyectos.src = 'audio/ruwayninchik.mp3';
 	nosotros.src = 'audio/nuqanchik.mp3';
@@ -854,12 +854,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center to-animate">
-					<h2 onmouseover="estadisticas_seccion.play()" onmouseout="estadisticas_seccion.pause();">Estadísticas</h2>
+					<h2 onmouseover="openAudio('estadisticas_seccion')" onmouseout="estadisticas_seccion.pause();">Estadísticas</h2>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="fh5co-counter to-animate" onmouseover="openAudio('continente')" onmouseout="continente.pause();">
 					<div class="fh5co-counter to-animate" onmouseover="openAudio('continente')" onmouseout="continente.pause();">
 						<img src="images/icons/geography.png" >
 						<span class="fh5co-counter-number js-counter" data-from="0" data-to="1" data-speed="5000" data-refresh-interval="50">1</span>
