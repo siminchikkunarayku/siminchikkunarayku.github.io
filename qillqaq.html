@@ -1,33 +1,16 @@
 
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> 
 	<html class="no-js"> <!--<![endif]-->
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Quechua &mdash;  by Nelsi</title>
+	<title>Siminchikkunarayku  </title
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="Quechua, Catolica, free bootstrap, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FREEHTML5.CO" />
 
-  <!-- 
-	//////////////////////////////////////////////////////
-
-	PLATAFORMA QUECHUA
-	DESIGNED & DEVELOPED by Nelsi Melgarejo 
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
-
-	//////////////////////////////////////////////////////
-	 -->
-
+  
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
@@ -55,26 +38,7 @@
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 
-	<!-- slick -->
-
-	<!-- 
-	Default Theme Style 
-	You can change the style.css (default color purple) to one of these styles
 	
-	1. pink.css
-	2. blue.css
-	3. turquoise.css
-	4. orange.css
-	5. lightblue.css
-	6. brown.css
-	7. green.css
-
-
-	<link href="css/shCore.css" rel="stylesheet" type="text/css" />
-  <link href="css/shThemeDefault.css" rel="stylesheet" type="text/css" />
-  emo CSS -->
-  
-
   <!-- Modernizr -->
   <script src="js/modernizr.js"></script>
 
@@ -82,7 +46,6 @@
 
 	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
 	<link rel="stylesheet" id="theme-switch" href="css/style.css">
-	<link rel="stylesheet" id="theme-switch" href="css/style5.css">
 	<link rel="stylesheet" id="theme-switch" href="css/slick.css">
 	<link rel="stylesheet" id="theme-switch" href="css/slick-theme.css">
 	<!-- End demo purposes only -->
@@ -91,23 +54,123 @@
 
 	<style type="text/css">
 	#musica {height:0;width:0;}
-
-
-	
-
 	</style>
 
+	<script>
+	// Array con todas las imágenes que deseamos que se vayan cambiando a
+	// cada clic
+	var imagenes=Array("images/icons/image1.png","images/icons/image2.png");
+	var imagenVisible=0;
+ 
+	// Función que cambia la imagen actual por la siguiente
+	function cambiar(img)
+	{
+		imagenVisible++;
+		if(imagenVisible>=imagenes.length)
+		{
+			imagenVisible=0;
+		}
+		img.src=imagenes[imagenVisible];
+		cargarSiguienteImagen();
+	}
+ 
+	/**
+	 * Esta función carga la siguiente imagen para no tener que esperar su carga
+	 * en el momento de mostrarla.
+	 */
+	function cargarSiguienteImagen()
+	{
+		if((imagenVisible+1)<imagenes.length)
+		{
+			console.log(imagenVisible+1);
+			var imgTmp=new Image();
+			imgTmp.src=imagenes[imagenVisible+1];
+		}
+	}
+ 
+	window.onload=function() {
+		cargarSiguienteImagen();
+	}
+	
+	
+	
+	
+	function openAudio(word){
+			
+		    var imagen = document.getElementById('imagen').src;
+			var flag = "0";
+			if (imagen.includes('1')){
+				flag = 1;
+			} else {
+				flag = 0;
+			}			
+		
+			if (flag == "1"){
+				if (word == "quechua") quechua.play();
+				if (word == "que") que.play();
+				if (word == "como") como.play();
+				if (word == "inspiracion") inspiracion.play();
+				if (word == "proyectos") proyectos.play();
+				if (word == "nosotros") nosotros.play();
+				if (word == "eventos") eventos.play();
+				if (word == "contactos") contactos.play();
+				if (word == "idiomas") idiomas.play();
+				
+				if (word == "corpus") corpus.play();
+				if (word == "investigaciones") investigaciones.play();
+				if (word == "proyectos_menu") proyectos_menu.play();
+				if (word == "que_hacemos") que_hacemos.play();
+				if (word == "como_lo_hacemos") como_lo_hacemos.play();
+				if (word == "que_nos_inspira") que_nos_inspira.play();
+				
+				if (word == "proyectos_seccion") proyectos_seccion.play();
+				if (word == "corpus_quechua") corpus_quechua.play();
+				if (word == "traductor_quechua") traductor_quechua.play();
+				if (word == "programas_radio") programas_radio.play();
+				//if (word == "eventos") que_nos_inspira.play();
+				
+				if (word == "nosotros_seccion") nosotros_seccion.play();
+				if (word == "nosotros_frase1") nosotros_frase1.play();
+				
+				if (word == "escritores") escritores.play();
+				if (word == "artistas") artistas.play();
+				if (word == "comunidad") comunidad.play();
+				if (word == "investigadores_seccion") investigadores_seccion.play();
+				if (word == "ingenieros") ingenieros.play();
+				if (word == "universidades") universidades.play();
+				
+				if (word == "contactanos_seccion") contactanos_seccion.play();
+				if (word == "contactanos_frase") contactanos_frase.play();
+				
+				if (word == "estadisticas_seccion") estadisticas_seccion.play();
+				if (word == "continente") continente.play();
+				if (word == "paises") paises.play();
+				if (word == "personas") personas.play();
+				if (word == "lenguas") lenguas.play();
+			}
+	}
+		
+	</script>
+	
+	<style>
+	img {cursor:pointer;}
+	</style>
+	
 	<script type="text/javascript">
 	var quechua = new Audio();
+	var que = new Audio();
 	var como = new Audio();
 	var inspiracion = new Audio();
 	var proyectos = new Audio();
 	var nosotros = new Audio();
+	var eventos = new Audio();
+	var idiomas = new Audio();
 	var contactos = new Audio();
 
 	var corpus = new Audio();
 	var investigaciones = new Audio();
 	var proyectos_menu = new Audio();
+	var que_hacemos = new Audio();
 	var como_lo_hacemos = new Audio();
 	var que_nos_inspira = new Audio();
 
@@ -138,169 +201,61 @@
 	var personas = new Audio();
 	var lenguas = new Audio();
 
-	quechua.src = 'audio/siminchikmanta.wav';
-	como.src = 'audio/imaynatari.wav';
-	inspiracion.src = 'audio/munayninchik.wav';
-	proyectos.src = 'audio/ruwayninchik.wav';
-	nosotros.src = 'audio/nuqanchik.wav';
-	contactos.src = 'audio/riqsinakusun_1.wav';
+	quechua.src = 'audio/siminchikmanta.mp3';
+	como.src = 'audio/como.mp3';
+	que.src = 'audio/que.mp3';
+	inspiracion.src = 'audio/munayninchik.mp3';
+	proyectos.src = 'audio/ruwayninchik.mp3';
+	nosotros.src = 'audio/nuqanchik.mp3';
+	eventos.src = 'audio/llamkayninchikkuna.mp3';
+	idiomas.src = 'audio/idiomas.mp3';
+	contactos.src = 'audio/riqsinakusun_1.mp3';
 
-	corpus.src = 'audio/qillqakuna_uyariykunapas_1.wav';
-	investigaciones.src = 'audio/yachay_maskapaykuna.wav';
-	proyectos_menu.src = 'audio/ruwaykuna.wav';
-	como_lo_hacemos.src = 'audio/imaynatam_ruwasunchik.wav';
-	que_nos_inspira.src = 'audio/imam_sunqunchikta_kuyuchin.wav';
+	corpus.src = 'audio/qillqakuna_uyariykunapas_1.mp3';
+	investigaciones.src = 'audio/yachay_maskapaykuna.mp3';
+	que_hacemos.src = 'audio/que_hacemos.mp3';
+	proyectos_menu.src = 'audio/ruwaykuna.mp3';
+	como_lo_hacemos.src = 'audio/imaynatam_ruwasunchik.mp3';
+	que_nos_inspira.src = 'audio/imam_sunqunchikta_kuyuchin.mp3';
 
-	proyectos_seccion.src = 'audio/ruwayninchikkuna.wav';
-	corpus_quechua.src = 'audio/qillqakuna_uyariykunapas.wav';
-	traductor_quechua.src = 'audio/siminchik_tikrachik.wav';
-	programas_radio.src = 'audio/wayra_wasipi_rimaykuna.wav';
-	eventos.src = 'audio/llamkayninchikkuna.wav';
+	proyectos_seccion.src = 'audio/ruwayninchikkuna.mp3';
+	corpus_quechua.src = 'audio/qillqakuna_uyariykunapas.mp3';
+	traductor_quechua.src = 'audio/siminchik_tikrachik.mp3';
+	programas_radio.src = 'audio/wayra_wasipi_rimaykuna.mp3';
+	eventos.src = 'audio/llamkayninchikkuna.mp3';
 
 
-	nosotros_seccion.src = 'audio/nuqaykumanta.wav';
-	nosotros_frase1.src = 'audio/frase1.wav';
+	nosotros_seccion.src = 'audio/nuqaykumanta.mp3';
+	nosotros_frase1.src = 'audio/frase1.mp3';
 
-	escritores.src = 'audio/qillqaqkuna.wav';
-	artistas.src = 'audio/takiqkuna.wav';
-	comunidad.src = 'audio/runamasinchikkuna.wav';
-	investigadores_seccion.src = 'audio/yachay_qatipaqkuna.wav';
-	ingenieros.src = 'audio/qispichikkuna.wav';
-	universidades.src = 'audio/hatun_yachay_wasikuna.wav';
+	escritores.src = 'audio/qillqaqkuna.mp3';
+	artistas.src = 'audio/takiqkuna.mp3';
+	comunidad.src = 'audio/runamasinchikkuna.mp3';
+	investigadores_seccion.src = 'audio/yachay_qatipaqkuna.mp3';
+	ingenieros.src = 'audio/qispichikkuna.mp3';
+	universidades.src = 'audio/hatun_yachay_wasikuna.mp3';
 
-	contactanos_seccion.src = 'audio/riqsinakusun_2.wav';
-	contactanos_frase.src = 'audio/frase2.wav';
+	contactanos_seccion.src = 'audio/riqsinakusun_2.mp3';
+	contactanos_frase.src = 'audio/frase2.mp3';
 
-	estadisticas_seccion.src = 'audio/yupaykuna.wav';
-	continente.src = 'audio/tiqsimuyu.wav';
-	paises.src = 'audio/suyukuna.wav';
-	personas.src = 'audio/runakuna.wav';
-	lenguas.src = 'audio/simikuna.wav';
+	estadisticas_seccion.src = 'audio/yupaykuna.mp3';
+	continente.src = 'audio/tiqsimuyu.mp3';
+	paises.src = 'audio/suyukuna.mp3';
+	personas.src = 'audio/runakuna.mp3';
+	lenguas.src = 'audio/simikuna.mp3';
 
 	</script>
 
 
 
-	<style>
-	/* For demo purpose only */
-				
-				/* For Demo Purposes Only ( You can delete this anytime :-) */
-				#colour-variations {
-					padding: 10px;
-					-webkit-transition: 0.5s;
-				  	-o-transition: 0.5s;
-				  	transition: 0.5s;
-					width: 140px;
-					position: fixed;
-					left: 0;
-					top: 100px;
-					z-index: 999999;
-					background: #fff;
-					/*border-radius: 4px;*/
-					border-top-right-radius: 4px;
-					border-bottom-right-radius: 4px;
-					-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-					-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-					-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-					box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-				}
-				#colour-variations.sleep {
-					margin-left: -140px;
-				}
-				#colour-variations h3 {
-					text-align: center;
-					font-size: 11px;
-					letter-spacing: 2px;
-					text-transform: uppercase;
-					color: #777;
-					margin: 0 0 10px 0;
-					padding: 0;;
-				}
-				#colour-variations ul,
-				#colour-variations ul li {
-					padding: 0;
-					margin: 0;
-				}
-				#colour-variations li {
-					list-style: none;
-					display: block;
-					margin-bottom: 5px!important;
-					float: left;
-					width: 100%;
-				}
-				#colour-variations li a {
-					width: 100%;
-					position: relative;
-					display: block;
-					overflow: hidden;
-					-webkit-border-radius: 4px;
-					-moz-border-radius: 4px;
-					-ms-border-radius: 4px;
-					border-radius: 4px;
-					-webkit-transition: 0.4s;
-					-o-transition: 0.4s;
-					transition: 0.4s;
-				}
-				#colour-variations li a:hover {
-				  	opacity: .9;
-				}
-				#colour-variations li a > span {
-					width: 33.33%;
-					height: 20px;
-					float: left;
-					display: -moz-inline-stack;
-					display: inline-block;
-					zoom: 1;
-					*display: inline;
-				}
-				
-
-				.option-toggle {
-					position: absolute;
-					right: 0;
-					top: 0;
-					margin-top: 5px;
-					margin-right: -30px;
-					width: 30px;
-					height: 30px;
-					background: #f64662;
-					text-align: center;
-					border-top-right-radius: 4px;
-					border-bottom-right-radius: 4px;
-					color: #fff;
-					cursor: pointer;
-					-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-					-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-					-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-					box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-				}
-				.option-toggle i {
-					top: 2px;
-					position: relative;
-				}
-				.option-toggle:hover, .option-toggle:focus, .option-toggle:active {
-					color:  #fff;
-					text-decoration: none;
-					outline: none;
-				}
-
-
-
-
-
-
-			
-}
-
-
-	</style>
- <!-- Demo CSS -->
+	
+	<!-- Demo CSS -->
   <link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 
   <!-- Modernizr -->
   <script src="js/modernizr.js"></script>
-
+  
   <style>
     .flexslider {
       margin-bottom: 10px;
@@ -324,7 +279,9 @@
 }
 @media screen and (max-width: 440px) {
     
-
+#fh5co-home{
+	height: 250px;
+}
 
 .flexslider{
 	display: none;
@@ -343,14 +300,9 @@
       text-align: right;
     }
   </style>
-
-
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
-	</head>
+  
+	
+ 	</head>
 	<body>
 
 	<section>
@@ -361,38 +313,43 @@
 			</div> 
     </div>
 	</section>
-	
-
-
 	<header role="banner" id="fh5co-header">
+
 			<div class="container">
+
 				<!-- <div class="row"> -->
 
 			    <nav class="navbar navbar-default">
 		        <div class="navbar-header">
-<!-- Mobile Toggle Menu Button -->
+					
+		        	<!-- Mobile Toggle Menu Button -->
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-		         <a class="navbar-brand" style = "background-image: url(images/logoreal.png); width: 60px; height: 60px;" href="index.html"></a> 
-		        </div>
+		         <a class="navbar-brand" style = "background-image: url(images/logoreal.png); width: 60px; height: 60px;" href="index.html">
+				 <p style="  text-indent: 60px;   text-transform: uppercase; color: #000; font-size: 18px; ">siminchikkunarayku</p></a> 
+				 </div>
+				
+				
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
-		            <li class="active"><a href="#" onclick="openSection('fh5co-intro')" data-nav-section="home" onmouseover="quechua.play()" onmouseout="quechua.pause();"><span>Quechua</span></a></li>
-					<li><a href="#" onclick="openSection('fh5co-que')" data-nav-section="que" ><span>¿Que?</span></a></li>
-		            <li><a href="#" onclick="openSection('fh5co-work')" data-nav-section="work" onmouseover="como.play()" onmouseout="como.pause();"><span>¿Cómo?</span></a></li>
-		            <li><a href="#" onclick="openSection('fh5co-testimonials')" data-nav-section="testimonials" onmouseout="inspiracion.pause();" onmouseover="inspiracion.play()"><span>Inspiración</span></a></li>
-		            <li><a href="#" onclick="openSection('fh5co-services')" data-nav-section="services" onmouseout="proyectos.pause();" onmouseover="proyectos.play()"><span>Proyectos</span></a></li>
-		            <li><a href="#" onclick="openSection('fh5co-about')" data-nav-section="about" onmouseout="nosotros.pause();" onmouseover="nosotros.play()"><span>Nosotros</span></a></li>
-		            <li><a href="#" onclick="openSection('fh5co-contact')" data-nav-section="contact" onmouseout="contactos.pause();" onmouseover="contactos.play()"><span>Contactos</span></a></li>
+		            <li class="active"><a href="#" onclick="openSection('fh5co-intro')" data-nav-section="home" onmouseover="openAudio('quechua')" onmouseout="quechua.pause();"><span>Quechua</span></a></li>
+		            <li><a href="#" onclick="openSection('fh5co-que')" data-nav-section="que" onmouseover="openAudio('que');" onmouseout="que.pause();"><span>¿Que?</span></a></li>
+					<li><a href="#" onclick="openSection('fh5co-work')" data-nav-section="work" onmouseover="openAudio('como');" onmouseout="como.pause();"><span>¿Cómo?</span></a></li>
+		            <li><a href="#" onclick="openSection('fh5co-testimonials')" data-nav-section="testimonials" onmouseover="openAudio('inspiracion');" onmouseout="inspiracion.pause();"><span>Inspiración</span></a></li>
+		            <li><a href="#" onclick="openSection('fh5co-services')" data-nav-section="services" onmouseover="openAudio('proyectos');" onmouseout="proyectos.pause();" ><span>Proyectos</span></a></li>
+		            <li><a href="#" onclick="openSection('fh5co-about')" data-nav-section="about" onmouseover="openAudio('nosotros');" onmouseout="nosotros.pause();" ><span>Nosotros</span></a></li>
+					<li><a href="#" onclick="openSection('fh5co-eventos')" data-nav-section="eventos" onmouseover="openAudio('eventos');" onmouseout="eventos.pause();" ><span>Eventos</span></a></li>
+		            <!--<li><a href="#" data-nav-section="contact" onmouseout="contactos.pause();" onmouseover="contactos.play()"><span>Contactos</span></a></li>-->
+					<li><a href="#" onclick="openSection('fh5co-idiomas')" data-nav-section="idiomas" onmouseover="openAudio('idiomas');" onmouseout="idiomas.pause();" ><span>Idioma</span></a></li>
+					<li><img id="imagen" src="images/icons/image1.png" onclick="cambiar(this);" class="img-responsive; background-position:center; " style="width:20px; height:20px; margin-top: 20px;"></li>
 		          </ul>
 		        </div>
 			    </nav>
 			  <!-- </div> -->
 		  </div>
+	</header>
 
-		
 
-			</header>
-
+	
 
 <script> 
 function openSection(texto){
@@ -472,39 +429,7 @@ function openSection(texto){
 			</div>		
 		</div>
 
-	<!--***********************
-<div class="container">
-	<div class="row">
-		<p class="text-justify">
-			2. Se define los requisitos para la construcción de un Corpus propio, que incluye la grabación, limpieza y filtrado, alineación con las transcripciones o textos usados.
-		</p>
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<figure>
-				<img src="images/art/image_1.jpg" class="img-responsive">
-					<figcaption>
-						Método tradicional, grabación en estudio y campo de la mayor cantidad de voces.
-					</figcaption>
-			</figure>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<figure>
-				<img src="images/art/image_1.jpg" class="img-responsive">
-					<figcaption>
-						Uso de voz sintética: es utilizar WaveNet, para aumentar nuestro Corpus y volver a entrenar a nuestro sistema de reconocimiento de voz.
-					</figcaption>
-			</figure>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<figure>
-				<img src="images/art/image_1.jpg" class="img-responsive">
-					<figcaption>
-						Transferencia de conocimiento: se utilizará para suplir a nuestro Corpus, en el caso que este sea más pequeño que el tamaño deseable.
-					</figcaption>
-			</figure>
-		</div>
-	</div>  -->
-	<br>
-<!--***********************-->
+	
 
 		<div class=" row">
 			<h3> Las librerias utilizadas en el proyecto son:</h3>
@@ -575,7 +500,7 @@ figcaption{
 		<div class="container">
 			<div class="">
 				<div class="col-md-12 text-center">
-					<p>&copy; Pontificia Universidad Católica del Perú - Todos los derechos reservados.<br>Creado por <a href="https://twitter.com/nelsibelly" target="_blank">nnnnnnnnnnnnn</a> y <a href="https://twitter.com/rjzevallos" target="_blank">nnnnnnn</a>.</p>
+					<p>&copy; Consorcio de Universidades.<br>Creado por <a href="https://twitter.com/nelsibelly" target="_blank">Nelsi Melgarejo</a></p>
 					
 				</div>
 			</div>
@@ -583,7 +508,7 @@ figcaption{
 				<div class="col-md-12 text-center">
 					<ul class="social social-circle">
 						<li><a href="#"><i class="icon-twitter"></i></a></li>
-						<li><a href="#"><i class="icon-facebook"></i></a></li>
+						<li><a href="https://www.facebook.com/Kamachikuq"><i class="icon-facebook"></i></a></li>
 						<li><a href="https://www.youtube.com/channel/UCtr39nRxoLgf6JFEIuUykkg"><i class="icon-youtube"></i></a></li>
 					</ul>
 				</div>
