@@ -5041,7 +5041,7 @@ tbody.collapse.in {
   background-color: #ddd;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #888;
+  background-color: #transparent;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
