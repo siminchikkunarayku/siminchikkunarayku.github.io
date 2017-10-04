@@ -1620,3 +1620,17 @@ left:0px;
   
  
 }
+#floating-panel {
+    position: absolute;
+    top: 500px;
+    left: 1%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    line-height: 30px;
+    padding-left: 10px;
+    font-weight:bold;
+
+}
