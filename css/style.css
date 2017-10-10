@@ -1622,7 +1622,7 @@ left:0px;
 }
 #floating-panel {
     position: absolute;
-    top: 600px;
+    top: 550px;
     left: 1%;
     z-index: 5;
     background-color: #fff;
@@ -1675,7 +1675,7 @@ left:0px;
 #floating-panel-title {
     position: absolute;
     top: 10px;
-    left: 35%;
+    left: 32%;
     
     z-index: 5;
     background: rgba(143, 73, 135, 0.95);
@@ -1685,9 +1685,22 @@ left:0px;
     line-height: 10px;
     padding-left: 10px;
     font-weight:bold;
-    height: 50px;
-}
-#floating-panel-title .h1 {
-  font-size:4vw;
+    height: 55px;
 }
 
+
+
+#fh5co-header #navbar  #multilang{
+    color: rgba(0, 0, 0, 0.5) !important;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  #fh5co-header #navbar #multilang{
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: rgba(62, 77, 87, 0.88);
+  position: relative;
+  font-size: 19px;
+  font-weight: 300;
+}

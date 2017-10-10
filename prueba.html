@@ -1,246 +1,56 @@
-<!DOCTYPE html>
-<html class="no-js"> <!--<![endif]-->
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Quechua &mdash;  by Nelsi</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
-	<meta name="keywords" content="Quechua, Catolica, free bootstrap, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FREEHTML5.CO" />
-<!-- 
-	//////////////////////////////////////////////////////
+<script language="JavaScript1.2" type="text/javascript">
+/* Cambia_idioma Javascript 0.2
+    imaginatic dhtml         dhtml@imaginatic.com
+   
+    Este script cambia entre diferentes idiomas en una pagina web
+    utilizando un sufijo en el nombre del archivo, por ejemplo
+   
+    nombre.html  nombre-fr.html nombre-en.html
+   
+    Este script puede ser utilizado y manipulado libremente, incluso
+    sin mantener esta nota. No tiene ningun tipo de garantia.
+*/
 
-	PLATAFORMA QUECHUA
-	DESIGNED & DEVELOPED by Nelsi Melgarejo y Rodolfo Zevallos
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
+var sufijos = new Array ();
+sufijos = {'es':'','fr':'fr','en':'en'}; // definicion de los diferentes sufijos, dejando vacio el idioma por defecto
 
-	//////////////////////////////////////////////////////
-	 -->
+var largo_sufijo = 2; // los sufijos definidos anteriormente deben tener todos el mismo largo, especificado aqui
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+var separador = '-';  // separador, no utilzar signos como #, ? o un punto. El script puede no funcionar si hay puntos
+                      // o guiones después de la extensión del archivo
 
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+var pagina_indice = 'index.html'; // pagina por defecto, se utiliza cuando no esta presente el nombre de archivo en la URl
 
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Simple Line Icons -->
-	<link rel="stylesheet" href="css/simple-line-icons.css">
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-
-	<!-- Modernizr -->
-  <script src="js/modernizr.js"></script>
-
-	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
-	<link rel="stylesheet" id="theme-switch" href="css/style.css">
-
-	
-	<!-- cambia de posisción nel
-	<link rel="stylesheet" id="theme-switch" href="css/style5.css">
-	-->
-	<link rel="stylesheet" id="theme-switch" href="css/slick.css">
-	<link rel="stylesheet" id="theme-switch" href="css/slick-theme.css">
-	<!-- End demo purposes only -->
-
-
-<html>
-<body>
-<section id="fh5co-radios" style="background: rgba(0, 0, 0, 0.5);">
-<div class="radios-overlay"></div>
-	<div class="container">
-		<div class="row">
-			<div class="table-radios">
-
-				<table style="width:100%">
-				<tbody>
-											<tr>
-												<td colspan="3">
-													<form name="form1" method="post">
-														<strong>radios</strong>
-														<select class="form-control" onchange="this.form.submit();">
-														<option value="Todos" selected="select">todo el perú</option>
-														<option value="cusco">cusco</option>
-														</select>
-													</form>
-												</td>
-											</tr>
-											<tr>
-												<td>radios</td>
-												<td>señal en vivo</td>
-											</tr>
-											<tr>
-												<td>
-													<a href=""> 
-													<img class="img-a" src="images/logoreal1.png" width="150" height="64" vspace="10" alt="logotipo de radio" title="radio1">
-													</a>
-												</td>
-												<td>
-													<h3>
-														<a href="">radio1</a>
-													</h3>
-													<p>
-														"Desdec Cusco"
-														<br>
-														"www-radio1."
-													</p>
-													
-												</td>
-												<td>
-													<a target="_blank" href="https://www.youtube.com/watch?v=0P4jkiseeVI"></a>
-													<p class="small">aqui en vivo</p>
-												</td>
-											</tr>
-												
-
-											
-											
-										
-
-				  
-				  </tbody>
-				</table>
-			</div>
-		</div>
-	</div>
-</section>
-<footer id="footer" role="contentinfo">
-		<a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
-		<div class="container">
-			<div class="">
-				<div class="col-md-12 text-center">
-					<p>&copy; Pontificia Universidad Católica del Perú - Todos los derechos reservados.<br>Creado por <a href="https://twitter.com/nelsibelly" target="_blank">Nelsi Melgarejo</a> y <a href="https://twitter.com/rjzevallos" target="_blank">Rodolfo Zevallos</a>.</p>
-					
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<ul class="social social-circle">
-						<li><a href="#"><i class="icon-twitter"></i></a></li>
-						<li><a href="#"><i class="icon-facebook"></i></a></li>
-						<li><a href="https://www.youtube.com/channel/UCtr39nRxoLgf6JFEIuUykkg"><i class="icon-youtube"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js">
-	</script> 
-	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js">
-	</script>
-	<script type="text/javascript" src="js/slick/slick.min.js"></script>
-	
-
-
-	<script type="text/javascript">
-    $(document).ready(function(){
-      $('.slider').slick({
-      	dots : true,
-      	speed: 1000,
-      	autoplay: true
-      });
-    });
-  </script>
-  <!-- jQuery -->
-	<!-- <script src="js/jquery.min.js"></script> -->
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Counter -->
-	<script src="js/jquery.countTo.js"></script>
-	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script> 
-
-
-
-	<script type="text/javascript" src="js/prism.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
-	<script src="css/slick.min.js"></script> 
-
-	<!-- Google Map -->
-	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script> -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false">
-	</script>
-
-
-
-	<script src="js/google_map.js"></script>
-
-	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
-	<script src="js/jquery.style.switcher.js"></script>
-	  <script defer src="js/jquery.flexslider.js"></script>
-
-  <script defer src="js/demo.js"></script>
-	<script>
-		$(function(){
-			$('#colour-variations ul').styleSwitcher({
-				defaultThemeId: 'theme-switch',
-				hasPreview: false,
-				cookie: {
-		          	expires: 30,
-		          	isManagingLoad: true
-		      	}
-			});	
-			$('.option-toggle').click(function() {
-				$('#colour-variations').toggleClass('sleep');
-			});
-		});
-	</script>
-	<!-- End demo purposes only -->
-
-	<!-- Main JS (Do not remove) -->
-	<script src="js/main.js"></script>
-
-  
-
-	<script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('.flexslider').flexslider({
-        animation: "slide",
-        controlsContainer: $(".custom-controls-container"),
-        customDirectionNav: $(".custom-navigation a"),
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
-  
-  <script type="text/javascript">
-  	$(document).ready(function() {
-    $('.data').slick();
-	});
-  </script>
-</body>
-</html>
+function cambia_idioma (idioma){
+	url_completa = document.location.href;
+	url_host = document.location.host;
+	url_texto = url_completa.substring (url_completa.lastIndexOf ('//') + 2);
+	if (url_texto.lastIndexOf ('.') < url_host.length){
+  if (url_texto.lastIndexOf ('/') == (url_texto.length - 1)){
+ 	 url_completa = url_completa + pagina_indice;
+  } else {
+ 	 url_completa = url_completa + '/' + pagina_indice;
+  }
+	}
+	posicion_separador = url_completa.lastIndexOf (separador);
+	if (sufijos[idioma] == ''){
+  if (posicion_separador != -1){
+    inicio_url = url_completa.substring (0,posicion_separador);
+    final_url = url_completa.substr (posicion_separador + separador.length + largo_sufijo);
+    document.location.href = inicio_url + final_url;
+  }
+	} else {
+  if (posicion_separador == -1){
+ 	 punto_final = url_completa.lastIndexOf ('.');
+ 	 inicio_url = url_completa.substring (0,punto_final);
+ 	 final_url = url_completa.substr (punto_final);
+ 	 document.location.href = inicio_url + separador + idioma + final_url;
+  } else if (url_completa.lastIndexOf (separador + idioma + '.') == -1){
+    inicio_url = url_completa.substring (0,posicion_separador);
+    final_url = url_completa.substr (posicion_separador + separador.length + largo_sufijo);
+    nueva_url = inicio_url + separador + sufijos[idioma] + final_url;
+    document.location.href = nueva_url;
+  }
+	}
+}
+</script>
