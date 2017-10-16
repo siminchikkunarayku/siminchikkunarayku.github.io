@@ -303,6 +303,7 @@
 
 </head>
 <body>
+
 	<section>
 		<div style="background: #00a7a3; height:50px;">
 			<div class="search col-xs-12 col-sm-6 col-md-6 col-lg-3">
@@ -319,25 +320,25 @@
 		        <div class="navbar-header">
 		        	<!-- Mobile Toggle Menu Button -->
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-					<a class="navbar-brand" style = "background-image: url(images/logoreal.png); width: 60px; height: 60px;" href="index.html">
+					<a class="navbar-brand" style = "background-image: url(../images/logoreal.png); width: 60px; height: 60px;" href="index.html">
 					<p style="  text-indent: 60px;   text-transform: uppercase; color: #000; font-size: 18px; ">siminchikkunarayku</p></a> 
 				</div>
 				
 				
 		        <div id="navbar" class="navbar-collapse collapse">
 					  <ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="#" data-nav-section="home" onmouseover="openAudio('quechua')" onmouseout="quechua.pause();"><span>Quechua</span></a></li>
-						<li><a href="#" data-nav-section="que" onmouseover="openAudio('que');" onmouseout="que.pause();"><span>What?</span></a></li>
-						<li><a href="#" data-nav-section="work" onmouseover="openAudio('como');" onmouseout="como.pause();"><span>How?</span></a></li>
-						<li><a href="#" data-nav-section="testimonials" onmouseover="openAudio('inspiracion');" onmouseout="inspiracion.pause();"><span>Inspiration</span></a></li>
-						<li><a href="#" data-nav-section="services" onmouseover="openAudio('proyectos');" onmouseout="proyectos.pause();" ><span>Projects</span></a></li>
-						<li><a href="#" data-nav-section="about" onmouseover="openAudio('nosotros');" onmouseout="nosotros.pause();" ><span>We are</span></a></li>
-						<li><a href="#" data-nav-section="eventos" onmouseover="openAudio('eventos');" onmouseout="eventos.pause();" ><span>Events</span></a></li>
-						<li class="multilang"><a href="#" data-nav-section="idiomas" onmouseover="openAudio('idiomas');" onmouseout="idiomas.pause();" >
+						<li class="active"><a href="#" data-nav-section="home"><span>Quechua</span></a></li>
+						<li><a href="#" data-nav-section="que" ><span>What?</span></a></li>
+						<li><a href="#" data-nav-section="work" ><span>How?</span></a></li>
+						<li><a href="#" data-nav-section="testimonials" ><span>Inspiration</span></a></li>
+						<li><a href="#" data-nav-section="services"  ><span>Projects</span></a></li>
+						<li><a href="#" data-nav-section="about"  ><span>We are</span></a></li>
+						<li><a href="#" data-nav-section="eventos" ><span>Events</span></a></li>
+						<li class="multilang"><a href="#" data-nav-section="idiomas" >
 							<select name="lang" class="jflanguageselection" size="1" onchange="document.location.replace(this.value);">
-								<option value="ingles/index.html" ">Español</option>
-								<option value="" selected="selected>English</option>
-								<option value="quechua/index.html">Quechua</option>
+								<option value="../index.html">Español</option>
+								<option value="index.html" selected="selected" >English</option>
+								<option value="../quechua/index.html">Quechua</option>
 							</select></a> 
 						</li>
 						<li><img id="imagen" src="../images/icons/image1.png" onclick="cambiar(this);" class="img-responsive; background-position:center; " style="width:20px; height:20px; margin-top: 20px;"></li>
@@ -424,7 +425,7 @@
 			<div class="row">
 				
 				<div class="col-md-12 section-heading text-center" style="margin-bottom: 1px;">
-					<h2 class="" onmouseout="que_hacemos.pause();" onmouseover="openAudio('que_hacemos')"> ¿Qué hacemos?</h2>
+					<h2 class="" onmouseout="que_hacemos.pause();" onmouseover="openAudio('que_hacemos')"> What do we do?</h2>
 					<div class="row">
 						<div class="col-md-12 c subtext ">
 							<h3 style="text-align: justify;">
@@ -668,10 +669,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate"  onmouseout="proyectos_seccion.pause();" onmouseover="openAudio('proyectos_seccion')" >Proyectos</h2>
+					<h2 class="to-animate"  onmouseout="proyectos_seccion.pause();" onmouseover="openAudio('proyectos_seccion')" >Projects</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3>La creatividad de la comunidad nos ayuda a seguir creciendo.</h3>
+							<h3>The creativity of the community helps us to keep growing.</h3>
 						</div>
 					</div>
 				</div>
@@ -682,14 +683,14 @@
 						<img src="../images/icons/audio_console.png" class="icons_bottom" >
 						<h3   onmouseout="corpus_quechua.pause();" onmouseover="openAudio('corpus_quechua')">CORPUS QUECHUA</h3>
 					</a>
-					<p style="font-size: 18px;">Repositorio de audio y de transcripciones de la lengua Quechua, disponible.</p>
+					<p style="font-size: 18px;">Repository of audio and transcriptions of the Quechua language, available.</p>
 				</div>
 				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate"  >
 					<a style="color:white;"  href="traductor.html">
-						<img src="images/icons/card_design.png" class="icons_bottom">
-						<h3   onmouseout="traductor_quechua.pause();" onmouseover="openAudio('traductor_quechua')">TRADUCTOR QUECHUA</h3> 
+						<img src="../images/icons/card_design.png" class="icons_bottom">
+						<h3   onmouseout="traductor_quechua.pause();" onmouseover="openAudio('traductor_quechua')">QUECHUA TRANSLATOR</h3> 
 					</a>
-					<p style="font-size: 18px;">El primer traductor de voz de la lengua Quechua disponible para todo el mundo.</p>
+					<p style="font-size: 18px;">The first Quechua language voice translator available to everyone.</p>
 				</div>
 
 				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate"  >
@@ -697,7 +698,7 @@
 						<img src="../images/icons/radio.png" class="icons_bottom">
 						<h3  onmouseout="programas_radio.pause();" onmouseover="openAudio('programas_radio')">PROGRAMAS DE RADIO</h3>
 					</a>
-					<p style="font-size: 18px;">La comunidad de radios que transmiten su programación en la lengua Quechua.</p>
+					<p style="font-size: 18px;">The community of radios that transmit their programming in the language Quechua.</p>
 				</div>
 				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate"  >
 					<img src="../images/icons/event.png" class="icons_bottom">
@@ -712,28 +713,28 @@
 						<img src="../images/icons/duolingo.png" class="icons_bottom" >
 					</a>
 					<h3>DUOLINGO</h3>
-					<p  style="font-size: 18px;">Construiremos cursos de Quechua para hablantes de otros idiomas Y cursos de Inglés y Chino Mandarin para Quechua hablantes.</p>
+					<p  style="font-size: 18px;">We will build Quechua courses for speakers of other languages and English and Chinese Mandarin courses for Quechua speakers.</p>
 				</div>
 				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate"  >
 					<a href="http://mozillanativo.org/" target="_blank" >
-						<img src="images/icons/firefox.png" class="icons_bottom">
+						<img src="../images/icons/firefox.png" class="icons_bottom">
 					</a>
 					<h3>FIREFOX</h3>
-					<p style="font-size: 18px;">Respaldamos la iniciativa de Mozilla Nativo.</p>
+					<p style="font-size: 18px;">We support the initiative of Mozilla Nativo.</p>
 				</div>
 				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate"  >
 					<a href="https://es.libreoffice.org/" target="_blank">
 						<img src="../images/icons/libreoffice.png" class="icons_bottom">
 					</a>
 					<h3>LIBRE OFFICE QUECHUA</h3>
-					<p style="font-size: 18px;">Contribuimos al mantenimiento de procesadores de texto.</p>
+					<p style="font-size: 18px;">We contribute to the maintenance of word processors.</p>
 				</div>
 				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate"  >
 					<a href="https://play.google.com/store/apps/details?id=com.ketanolab.simidic&hl=es_419" target="_blank">
 						<img src="../images/icons/simidic.png" class="icons_bottom">
 					</a>
 					<h3>SIMIDIC</h3>
-					<p style="font-size: 18px;">Primer diccionario de Quechua online creado por ketanolap.</p>
+					<p style="font-size: 18px;">First online Quechua dictionary created by ketanolap.</p>
 				</div>
 			</div>
 	</section>
@@ -744,10 +745,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate" onmouseout="nosotros_seccion.pause();" onmouseover="openAudio('nosotros_seccion')">Nosotros</h2>
+					<h2 class="to-animate" onmouseout="nosotros_seccion.pause();" onmouseover="openAudio('nosotros_seccion')">About us</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3 onmouseout="nosotros_frase1.pause();" onmouseover="openAudio('nosotros_frase1')">Somos un equipo con amor por la cultura de nuestras comunidades.</h3>
+							<h3 onmouseout="nosotros_frase1.pause();" onmouseover="openAudio('nosotros_frase1')">We are a team with a love for the culture of our communities.</h3>
 						</div>
 					</div>
 				</div>
@@ -835,7 +836,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center to-animate">
-					<h2 onmouseover="openAudio('estadisticas_seccion')" onmouseout="estadisticas_seccion.pause();">Estadísticas</h2>
+					<h2 onmouseover="openAudio('estadisticas_seccion')" onmouseout="estadisticas_seccion.pause();">Statistics</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -843,21 +844,21 @@
 					<div class="fh5co-counter to-animate" onmouseover="openAudio('continente')" onmouseout="continente.pause();">
 						<img src="../images/icons/geography.png" >
 						<span class="fh5co-counter-number js-counter" data-from="0" data-to="400" data-speed="5000" data-refresh-interval="50">1</span>
-						<span class="fh5co-counter-label">Lenguas</span>
+						<span class="fh5co-counter-label">Languages</span>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<div class="fh5co-counter to-animate" onmouseover="openAudio('paises')" onmouseout="paises.pause();">
 						<img src="../images/icons/group.png" >
 						<span class="fh5co-counter-number js-counter" data-from="0" data-to="1200" data-speed="5000" data-refresh-interval="50">7</span>
-						<span class="fh5co-counter-label">Voluntarios</span>
+						<span class="fh5co-counter-label">Volunteers</span>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<div class="fh5co-counter to-animate" onmouseover="openAudio('personas')" onmouseout="personas.pause();">
 						<img src="../images/icons/group.png" >
 						<span class="fh5co-counter-number js-counter" data-from="0" data-to="15000000" data-speed="5000" data-refresh-interval="50">7'800,000</span>
-						<span class="fh5co-counter-label">Hablantes</span>
+						<span class="fh5co-counter-label">Speakers</span>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
@@ -882,7 +883,7 @@
 					<h2 class="" onmouseout="eventos.pause();" onmouseover="openAudio('eventos')"> Eventos</h2>
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1 subtext ">
-							<h3>¡Muy pronto! el 21 de febrero del 2018 lanzaremos la primera versión de Qillqaq, ¡únete a esta fiesta!.</h3>
+							<h3>¡Coming Soon! on February 21, 2018 we will release the first version of Qillqaq, join this party !.</h3>
 						</div>
 					</div>
 				</div>	
@@ -906,7 +907,7 @@
 					<h2 class="to-animate" onmouseover="openAudio('contactos')"  onmouseout="contactos_seccion.pause();">Contactanos</h2>
 					<div class="row">
 						<div onmouseover="openAudio('contactanos_frase') "  onmouseout="contactanos_frase.pause();"vclass="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3>Ayúdanos a conservar la lengua nativa más hablada en América Latina.</h3>
+							<h3>Help us to preserve the most widely spoken native language in Latin America.</h3>
 						</div>
 					</div>
 				</div>
@@ -914,7 +915,7 @@
 			
 			<div class="row row-bottom-padded-md">
 				<div class="col-lg-6 to-animate">
-					<h3>Información de contacto</h3>
+					<h3>Contact information</h3>
 					<ul class="fh5co-contact-info">
 						<li class="fh5co-contact-address ">
 						<img src="../images/icons/home.png" class="icons_bottom">
@@ -927,22 +928,22 @@
 				</div>
 				<div class="col-lg-6 to-animate">	
 					
-						<h3>Formulario de contacto</h3>
+						<h3>Contact Form</h3>
 						<div class="form-group ">
-							<label for="name" class="sr-only">Nombre</label>
-							<input id="name" class="form-control" placeholder="Nombre" type="text">
+							<label for="name" class="sr-only">Name</label>
+							<input id="name" class="form-control" placeholder="Name" type="text">
 						</div>
 						<div class="form-group ">
 							<label for="email" class="sr-only">Email</label>
 							<input id="email" class="form-control" placeholder="Email" type="email">
 						</div>
 						<div class="form-group ">
-							<label for="phone" class="sr-only">Teléfono</label>
-							<input id="phone" class="form-control" placeholder="Teléfono" type="text">
+							<label for="phone" class="sr-only">Phone</label>
+							<input id="phone" class="form-control" placeholder="Phone" type="text">
 						</div>
 						<div class="form-group ">
-							<label for="message" class="sr-only">Mensaje</label>
-							<textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Mensaje"></textarea>
+							<label for="message" class="sr-only">Message</label>
+							<textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
 						</div>
 						<div class="form-group ">
 							<input class="btn btn-primary btn-lg" value="Enviar" type="submit">
@@ -961,7 +962,7 @@
 		<div class="container">
 			
 			<div class="col-md-12 ">
-				<p>Auspiciadores:</a></p>
+				<p>sponsors:</a></p>
 			</div>
 			
 			<div class="row">
@@ -984,7 +985,7 @@
 		<div class="container">
 			<div class="">
 				<div class="col-md-12 text-center">
-					<p>&copy; Consorcio de Universidades.<br>Creado por <a href="https://twitter.com/nelsibelly" target="_blank">Nelsi Melgarejo</a></p>
+					<p>&copy; University Consortium.<br>Created by <a href="https://twitter.com/nelsibelly" target="_blank">Nelsi Melgarejo</a></p>
 				</div>
 			</div>
 			<div class="row">
