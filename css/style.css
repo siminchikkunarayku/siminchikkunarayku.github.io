@@ -294,7 +294,7 @@ h4 {
 }
 #fh5co-header #navbar li a {
   font-family: "Source Sans Pro", Arial, sans-serif;
-  color: rgba(62, 77, 87, 0.88);
+  color: rgba(70, 91, 110, 0.9);
   position: relative;
   font-size: 19px;
   font-weight: 300;
@@ -338,7 +338,7 @@ h4 {
 #fh5co-header #navbar li.active a {
   background: transparent;
   background: none;
-  color: #41505a;
+  color: #465b6e;
 }
 #fh5co-header #navbar li.active a span:before {
   visibility: visible;
@@ -362,18 +362,18 @@ h4 {
   color: #8F4987;
 }
 #fh5co-header.navbar-fixed-top #navbar li a {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(70, 91, 110, 0.8);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
 #fh5co-header.navbar-fixed-top #navbar li a:hover {
-  color: #41505a;
+  color: #465b6e;
 }
 #fh5co-header.navbar-fixed-top #navbar li.active a {
   background: transparent;
   background: none;
-  color: #41505a;
+  color: #465b6e;
 }
 #fh5co-header.navbar-fixed-top #navbar li.active a span:before {
   visibility: visible;
@@ -676,7 +676,7 @@ h4 {
 }
 
 #fh5co-services {
-  background-color: #8F4987;
+      background: -webkit-linear-gradient(#aa68a9, #6c2d63);
   /* IE9, iOS 3.2+ */
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiMzZjk1ZWEiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzUyZDNhYSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
   background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #8F4987), color-stop(1, #8F4987));
@@ -689,6 +689,7 @@ h4 {
   overflow: hidden;
   position: relative;
   color: rgba(255, 255, 255, 0.7);
+      background: -webkit-linear-gradient(#aa68a9, #6c2d63);
 }
 
 #fh5co-services .services-overlay{
@@ -698,7 +699,7 @@ position: absolute;
   right: 0;
   bottom: 0;
   
-  background: rgba(143, 73, 135, 0.95);
+  background: rgba(143, 73, 135, 0.97);
 }
 
 /*
@@ -805,10 +806,10 @@ position: absolute;
   color: #fff;
 }
 #fh5co-counters .section-heading h2:after {
-  background: rgba(255, 255, 255, 0.3) !important;
+  background: rgba(70, 91, 110, 0.3) !important;
 }
 #fh5co-counters .section-heading .subtext h3 {
-  color: rgba(255, 255, 255, 0.7) !important;
+  color: rgba(70, 91, 110, 0.7) !important;
 }
 #fh5co-counters .fh5co-counter {
   position: relative;
@@ -922,19 +923,12 @@ position: absolute;
   /*overflow: hidden;*/
   position: relative;
   color: white;
-  background-color: #949388;
-  /* IE9, iOS 3.2+ */
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiMzZjk1ZWEiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzUyZDNhYSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #949388), color-stop(0, #949388));
-  /* Android 2.3 */
-  background-image: -webkit-repeating-linear-gradient(top left, #949388 0%, #949388 100%);
-  /* IE10+ */
-  background-image: repeating-linear-gradient(to bottom right, #949388 0%, #949388 100%);
-  background-image: -ms-repeating-linear-gradient(top left, #949388 0%, #949388 100%);
+  background: -webkit-linear-gradient(#aa68a9, #6c2d63);
+  
 }
 #fh5co-work a {
-  color: rgba(255, 255, 255, 0.5);
-  text-decoration: underline;
+  color: rgba(255, 255, 255, 1);
+ 
 }
 #fh5co-work a:hover {
   color: white;
@@ -1100,6 +1094,7 @@ position: absolute;
   position: relative;
   color: #fff;
   background-color: #fafafa;
+  background: -webkit-linear-gradient(#aa68a9, #6c2d63);
 }
 
 #fh5co-contact  h3{
@@ -1124,9 +1119,7 @@ position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  
-  background: rgba(143, 73, 135, 0.95);
-}
+  }
 
 
 #fh5co-contact .fh5co-contact-info li {
@@ -1355,7 +1348,7 @@ position: absolute;
   background: #8F4987;
 }
 .btn:hover, .btn:active, .btn:focus {
-  background: #393e46 !important;
+  
   color: #fff;
   outline: none !important;
 }
@@ -1542,8 +1535,7 @@ position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  
-  background: rgba(143, 73, 135, 0.95);
+
 }
 
 #fh5co-contactanos .work-contactanos{
@@ -1611,12 +1603,8 @@ left:0px;
 #auspiciadores {
 
   padding: 40px 0;
- 
-
- 
-    color: #666;
-    
-    text-align: center;
+  color: #666;
+  text-align: center;
   
  
 }
@@ -1685,7 +1673,7 @@ left:0px;
     line-height: 10px;
     padding-left: 10px;
     font-weight:bold;
-    height: 55px;
+    height: 60px;
 }
 
 
@@ -1698,9 +1686,43 @@ left:0px;
   }
 
   #fh5co-header #navbar #multilang{
-  font-family: "Source Sans Pro", Arial, sans-serif;
-  color: rgba(62, 77, 87, 0.88);
+  
+  color: rgba(70, 91, 110, 0.9);
   position: relative;
-  font-size: 19px;
+  
   font-weight: 300;
+}
+
+.multilang select {
+    -webkit-appearance: none;
+    width: 100px;
+    text-indent: 0.01px;
+    color: rgba(70, 91, 110, 1);
+    
+	background: url('../images/icons/idioma.png') no-repeat;
+    cursor: pointer; 
+    background-position: 100% 50%;
+    border-width: 0px !important;
+    border-style: initial !important;
+    border-color: initial !important;
+    border-image: initial !important;
+}
+
+
+
+.btn.btn-default {
+    color: #ffffff;
+    background-color: #ba22ba;
+    background-image: linear-gradient(to bottom, #e68de6, #c769c7);
+    border-color: #ffffff #ffffff #ffffff;
+}
+.btn.btn-default:hover {
+    color: #ffffff;
+    background-color: #ba22ba;
+    background-image: linear-gradient(to bottom, #c769c7, #c769c7);
+    border-color: #ffffff #ffffff #ffffff;
+}
+#fh5co-eventos .img-eventos{
+	display:block; 
+	margin:auto;
 }

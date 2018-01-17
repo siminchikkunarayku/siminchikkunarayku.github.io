@@ -321,7 +321,7 @@
 		        	<!-- Mobile Toggle Menu Button -->
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
 					<a class="navbar-brand" style = "background-image: url(images/logoreal.png); width: 60px; height: 60px;" href="index.html">
-					<p style="  text-indent: 60px;   text-transform: uppercase; color: #000; font-size: 18px; ">siminchikkunarayku</p></a> 
+					<p style="  text-indent: 60px;   text-transform: uppercase; color: rgba(70, 91, 110, 1); font-size: 18px; ">siminchikkunarayku</p></a> 
 				</div>
 				
 				
@@ -334,14 +334,15 @@
 						<li><a href="#" data-nav-section="services" onmouseover="openAudio('proyectos');" onmouseout="proyectos.pause();" ><span>Proyectos</span></a></li>
 						<li><a href="#" data-nav-section="about" onmouseover="openAudio('nosotros');" onmouseout="nosotros.pause();" ><span>Nosotros</span></a></li>
 						<li><a href="#" data-nav-section="eventos" onmouseover="openAudio('eventos');" onmouseout="eventos.pause();" ><span>Eventos</span></a></li>
-						<li class="multilang"><a href="#" data-nav-section="idiomas" onmouseover="openAudio('idiomas');" onmouseout="idiomas.pause();" >
-							<select name="lang" class="jflanguageselection" size="1" onchange="document.location.replace(this.value);">
+						<li class="multilang">
+						<a href="#" data-nav-section="idiomas" onmouseover="openAudio('idiomas');" onmouseout="idiomas.pause();" >
+							<select name="lang" class="jflanguageselection" size="1" onchange="document.location.replace(this.value);" >
 								<option value="#" selected="selected">Español</option>
 								<option value="ingles/index.html">English</option>
 								<option value="quechua/index.html">Quechua</option>
-							</select></a> 
+							</select>
+							</a> 
 						</li>
-						<li><img id="imagen" src="images/icons/image1.png" onclick="cambiar(this);" class="img-responsive; background-position:center; " style="width:20px; height:20px; margin-top: 20px;"></li>
 					  </ul>
 		        </div>
 			</nav>
@@ -417,15 +418,15 @@
 			
 		</div>
 	</section>
-	
+
 <!-- que deseamos -->
 	<section id="fh5co-que" data-section="que">
 		<div class="que-overlay"></div>
 		<div class="container">
 			<div class="row">
-				
 				<div class="col-md-12 section-heading text-center" style="margin-bottom: 1px;">
-					<h2 class="" onmouseout="que_hacemos.pause();" onmouseover="openAudio('que_hacemos')"> ¿Qué hacemos?</h2>
+					
+	<h2 class="" onmouseout="que_hacemos.pause();" onmouseover="openAudio('que_hacemos')"> ¿Qué hacemos?</h2>
 					<div class="row">
 						<div class="col-md-12 c subtext ">
 							<h3 style="text-align: justify;">
@@ -473,9 +474,10 @@
 
 <!-- como lo hacemos -->
 
-	<section id="fh5co-work" data-section="work" style="background: url(images/micro2.jpg); background-size: cover; background-attachment: fixed; background-position: center; background-repeat:no-repeat; min-height: 20px;" >
+	<section id="fh5co-work" data-section="work">
 		<div class="work-overlay"></div>
 		<div class="container">
+		
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
 					<h2 class="to-animate" onmouseout="como_lo_hacemos.pause();" onmouseover="openAudio('como_lo_hacemos')">¿Cómo lo hacemos?</h2>
@@ -528,7 +530,7 @@
 			<div class="col-md-12 section-heading text-center">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 subtext to-animate">
-						<a href="mapa.html"><h3>Ver mapa</h3></a>
+						<a href="mapa.html" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-map-marker"></span> ver mapa</a>
 					</div>
 				</div>
 			</div>
@@ -872,7 +874,7 @@
 	</section>
 	
 <!-- fin nosotros -->	
-	
+
 <!-- eventos-->
 <section id="fh5co-eventos" data-section="eventos">
     <div class="eventos-overlay"></div>
@@ -889,7 +891,7 @@
 			</div>
 			<div class="row ">			
 				<figure>
-						<img  src="images/evento.jpg"  class="img-responsive" style="margin-left: 10%;">
+						<img  src="images/evento.jpg"  class="img-responsive" style="display:block; margin:auto;">
 				</figure>
 			</div>			
 		</div>		
@@ -901,6 +903,7 @@
 	<section id="fh5co-contact" data-section="contact">
 		<div class="contact-overlay"></div>
 		<div class="container">
+		
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
 					<h2 class="to-animate" onmouseover="openAudio('contactos')"  onmouseout="contactos_seccion.pause();">Contactanos</h2>
@@ -953,7 +956,7 @@
 			
 	<!--	<div id="map" class="to-animate"></div> -->
 	</section>
-	
+
 	
 	<footer id="auspiciadores">
 		
@@ -964,15 +967,20 @@
 			</div>
 			
 			<div class="row">
-				<div class="col-md-6 ">
+				<div class="col-md-4 ">
 					<a href="https://www.youtube.com/user/pucp" target="_blank" >
-					<img src="images/auspiciadores/pucp.png" style="width:500px" >
+					<img src="images/auspiciadores/pucp.png" style="width:300px" >
 					</a>
 				</div>
-				<div class="col-md-6 ">
-				<br><br>
+				<div class="col-md-4 ">
+				<br>
 				<a href="https://www.youtube.com/user/ConcytecPeru/featured" target="_blank">
-					<img src="images/auspiciadores/concytec.png" style="width:500px"></a>
+					<img src="images/auspiciadores/concytec.png" style="width:300px"></a>
+				</div>
+				<div class="col-md-4 ">
+				<br>
+				<a href="" target="_blank">
+					<img src="images/auspiciadores/internetsociety.png" style="width:300px"></a>
 				</div>
 			</div>
 		</div>
