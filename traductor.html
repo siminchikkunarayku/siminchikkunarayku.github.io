@@ -38,8 +38,8 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 
 	
-  <!-- Modernizr -->
-  <script src="js/modernizr.js"></script>
+	<!-- Modernizr -->
+	<script src="js/modernizr.js"></script>
 
 	<link rel="stylesheet" href="css/style.css">
 
@@ -50,14 +50,21 @@
 	<!-- End demo purposes only -->
 
 
-
 	<style type="text/css">
 	#musica {height:0;width:0;}
 	</style>
-
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113083764-1"></script>
 	<script>
-	// Array con todas las imágenes que deseamos que se vayan cambiando a
-	// cada clic
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-113083764-1');
+	</script>
+	
+	<script>
+	// Array con todas las imágenes que deseamos que se vayan cambiando a cada clic
 	var imagenes=Array("images/icons/image1.png","images/icons/image2.png");
 	var imagenVisible=0;
  
@@ -73,10 +80,9 @@
 		cargarSiguienteImagen();
 	}
  
-	/**
-	 * Esta función carga la siguiente imagen para no tener que esperar su carga
-	 * en el momento de mostrarla.
-	 */
+	
+	 //Esta función carga la siguiente imagen para no tener que esperar su carga en el momento de mostrarla.
+
 	function cargarSiguienteImagen()
 	{
 		if((imagenVisible+1)<imagenes.length)
@@ -90,10 +96,7 @@
 	window.onload=function() {
 		cargarSiguienteImagen();
 	}
-	
-	
-	
-	
+		
 	function openAudio(word){
 			
 		    var imagen = document.getElementById('imagen').src;
@@ -114,12 +117,12 @@
 	
 	
 
-<!-- Demo CSS -->
-  <link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<!-- Demo CSS -->
+	<link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 
-  <!-- Modernizr -->
-  <script src="js/modernizr.js"></script>
+	<!-- Modernizr -->
+	<script src="js/modernizr.js"></script>
   
   <style>
     .flexslider {

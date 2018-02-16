@@ -2,16 +2,6 @@
 	<html class="no-js"> <!--<![endif]-->
 	<head>
 	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113083764-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-113083764-1');
-</script>
-
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Siminchikkunarayku  </title>
@@ -19,8 +9,6 @@
 	<meta name="description" content="Quechua" />
 	<meta name="keywords" content="siminchikkunarayku, quechua, runasimi, asr, reinvindicación, kichwa, traductor, andes, andino, tecnología, precolombino, aymara, ashanka, awjun, shipino, wanpis, kauki, kawsay" />
 	
-
-
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
@@ -36,7 +24,6 @@
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
-	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="../css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -47,225 +34,29 @@
 	<link rel="stylesheet" href="../css/magnific-popup.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="../css/bootstrap.css">
-
-  
-  <!-- Modernizr -->
-  <script src="../js/modernizr.js"></script>
-
+	<!-- style  -->
 	<link rel="stylesheet" href="../css/style.css">
-
 	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
 	<link rel="stylesheet" id="theme-switch" href="../css/style.css">
 	<link rel="stylesheet" id="theme-switch" href="../css/slick.css">
 	<link rel="stylesheet" id="theme-switch" href="../css/slick-theme.css">
 	<!-- End demo purposes only -->
-
-
-
-	<style type="text/css">
-	#musica {height:0;width:0;}
-	</style>
-	
-	<script>
-	// Array con todas las imágenes que deseamos que se vayan cambiando a
-	// cada clic
-	var imagenes=Array("images/icons/image1.png","images/icons/image2.png");
-	var imagenVisible=0;
- 
-	// Función que cambia la imagen actual por la siguiente
-	function cambiar(img)
-	{
-		imagenVisible++;
-		if(imagenVisible>=imagenes.length)
-		{
-			imagenVisible=0;
-		}
-		img.src=imagenes[imagenVisible];
-		cargarSiguienteImagen();
-	}
- 
-	/**
-	 * Esta función carga la siguiente imagen para no tener que esperar su carga
-	 * en el momento de mostrarla.
-	 */
-	function cargarSiguienteImagen()
-	{
-		if((imagenVisible+1)<imagenes.length)
-		{
-			console.log(imagenVisible+1);
-			var imgTmp=new Image();
-			imgTmp.src=imagenes[imagenVisible+1];
-		}
-	}
- 
-	window.onload=function() {
-		cargarSiguienteImagen();
-	}
-	
-	
-	
-	
-	function openAudio(word){
-			
-		    var imagen = document.getElementById('imagen').src;
-			var flag = "0";
-			if (imagen.includes('1')){
-				flag = 1;
-			} else {
-				flag = 0;
-			}			
 		
-			if (flag == "1"){
-				if (word == "quechua") quechua.play();
-				if (word == "que") que.play();
-				if (word == "como") como.play();
-				if (word == "inspiracion") inspiracion.play();
-				if (word == "proyectos") proyectos.play();
-				if (word == "nosotros") nosotros.play();
-				if (word == "eventos") eventos.play();
-				if (word == "contactos") contactos.play();
-				if (word == "idiomas") idiomas.play();
-				
-				if (word == "corpus") corpus.play();
-				if (word == "investigaciones") investigaciones.play();
-				if (word == "proyectos_menu") proyectos_menu.play();
-				if (word == "que_hacemos") que_hacemos.play();
-				if (word == "como_lo_hacemos") como_lo_hacemos.play();
-				if (word == "que_nos_inspira") que_nos_inspira.play();
-				
-				if (word == "proyectos_seccion") proyectos_seccion.play();
-				if (word == "corpus_quechua") corpus_quechua.play();
-				if (word == "traductor_quechua") traductor_quechua.play();
-				if (word == "programas_radio") programas_radio.play();
-				//if (word == "eventos") que_nos_inspira.play();
-				
-				if (word == "nosotros_seccion") nosotros_seccion.play();
-				if (word == "nosotros_frase1") nosotros_frase1.play();
-				
-				if (word == "escritores") escritores.play();
-				if (word == "artistas") artistas.play();
-				if (word == "comunidad") comunidad.play();
-				if (word == "investigadores_seccion") investigadores_seccion.play();
-				if (word == "ingenieros") ingenieros.play();
-				if (word == "universidades") universidades.play();
-				
-				if (word == "contactanos_seccion") contactanos_seccion.play();
-				if (word == "contactanos_frase") contactanos_frase.play();
-				
-				if (word == "estadisticas_seccion") estadisticas_seccion.play();
-				if (word == "continente") continente.play();
-				if (word == "paises") paises.play();
-				if (word == "personas") personas.play();
-				if (word == "lenguas") lenguas.play();
-			}
-	}
+	<!-- Demo CSS -->
+	<link rel="stylesheet" href="../css/demo.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
+	<!-- Modernizr -->
+	<script src="../js/modernizr.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113083764-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-113083764-1');
+		</script>
 		
-	</script>
-	
-	<style>
-	img {cursor:pointer;}
-	</style>
-	
-	<script type="text/javascript">
-	var quechua = new Audio();
-	var que = new Audio();
-	var como = new Audio();
-	var inspiracion = new Audio();
-	var proyectos = new Audio();
-	var nosotros = new Audio();
-	var eventos = new Audio();
-	var idiomas = new Audio();
-	var contactos = new Audio();
-
-	var corpus = new Audio();
-	var investigaciones = new Audio();
-	var proyectos_menu = new Audio();
-	var que_hacemos = new Audio();
-	var como_lo_hacemos = new Audio();
-	var que_nos_inspira = new Audio();
-
-	var proyectos_seccion = new Audio();
-	var corpus_quechua = new Audio();
-	var traductor_quechua = new Audio();
-	var programas_radio = new Audio();
-	var eventos = new Audio();
-
-	var nosotros_seccion = new Audio();
-	var nosotros_frase1 = new Audio();
-
-
-	var escritores = new Audio();
-	var artistas = new Audio();
-	var comunidad = new Audio();
-	var investigadores_seccion = new Audio();
-	var ingenieros = new Audio();
-	var universidades = new Audio();
-
-
-	var contactanos_seccion = new Audio();
-	var contactanos_frase = new Audio();
-
-	var estadisticas_seccion = new Audio();
-	var continente = new Audio();
-	var paises = new Audio();
-	var personas = new Audio();
-	var lenguas = new Audio();
-
-	quechua.src = 'audio/siminchikmanta.mp3';
-	como.src = 'audio/como.mp3';
-	que.src = 'audio/que.mp3';
-	inspiracion.src = 'audio/munayninchik.mp3';
-	proyectos.src = 'audio/ruwayninchik.mp3';
-	nosotros.src = 'audio/nuqanchik.mp3';
-	eventos.src = 'audio/llamkayninchikkuna.mp3';
-	idiomas.src = 'audio/idiomas.mp3';
-	contactos.src = 'audio/riqsinakusun_1.mp3';
-
-	corpus.src = 'audio/qillqakuna_uyariykunapas_1.mp3';
-	investigaciones.src = 'audio/yachay_maskapaykuna.mp3';
-	que_hacemos.src = 'audio/que_hacemos.mp3';
-	proyectos_menu.src = 'audio/ruwaykuna.mp3';
-	como_lo_hacemos.src = 'audio/imaynatam_ruwasunchik.mp3';
-	que_nos_inspira.src = 'audio/imam_sunqunchikta_kuyuchin.mp3';
-
-	proyectos_seccion.src = 'audio/ruwayninchikkuna.mp3';
-	corpus_quechua.src = 'audio/qillqakuna_uyariykunapas.mp3';
-	traductor_quechua.src = 'audio/siminchik_tikrachik.mp3';
-	programas_radio.src = 'audio/wayra_wasipi_rimaykuna.mp3';
-	eventos.src = 'audio/llamkayninchikkuna.mp3';
-
-
-	nosotros_seccion.src = 'audio/nuqaykumanta.mp3';
-	nosotros_frase1.src = 'audio/frase1.mp3';
-
-	escritores.src = 'audio/qillqaqkuna.mp3';
-	artistas.src = 'audio/takiqkuna.mp3';
-	comunidad.src = 'audio/runamasinchikkuna.mp3';
-	investigadores_seccion.src = 'audio/yachay_qatipaqkuna.mp3';
-	ingenieros.src = 'audio/qispichikkuna.mp3';
-	universidades.src = 'audio/hatun_yachay_wasikuna.mp3';
-
-	contactanos_seccion.src = 'audio/riqsinakusun_2.mp3';
-	contactanos_frase.src = 'audio/frase2.mp3';
-
-	estadisticas_seccion.src = 'audio/yupaykuna.mp3';
-	continente.src = 'audio/tiqsimuyu.mp3';
-	paises.src = 'audio/suyukuna.mp3';
-	personas.src = 'audio/runakuna.mp3';
-	lenguas.src = 'audio/simikuna.mp3';
-
-	</script>
-
-
-
-	
- <!-- Demo CSS -->
-  <link rel="stylesheet" href="../css/demo.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
-
-  <!-- Modernizr -->
-  <script src="js/modernizr.js"></script>
-
   <style>
     .flexslider {
       margin-bottom: 10px;
@@ -323,7 +114,6 @@
 		</div>
 	</section>
 
-
 	<header role="banner" id="fh5co-header">
 
 		<div class="container">
@@ -334,8 +124,7 @@
 					<a class="navbar-brand" style = "background-image: url(../images/logoreal.png); width: 60px; height: 60px;" href="index.html">
 					<p style="  text-indent: 60px;   text-transform: uppercase; color: #000; font-size: 18px; ">siminchikkunarayku</p></a> 
 				</div>
-				
-				
+								
 		        <div id="navbar" class="navbar-collapse collapse">
 					  <ul class="nav navbar-nav navbar-right">
 						<li class="active"><a href="#" data-nav-section="home"><span>Quechua</span></a></li>
@@ -352,7 +141,6 @@
 								<option value="../quechua/index.html">Quechua</option>
 							</select></a> 
 						</li>
-						<li><img id="imagen" src="../images/icons/image1.png" onclick="cambiar(this);" class="img-responsive; background-position:center; " style="width:20px; height:20px; margin-top: 20px;"></li>
 					  </ul>
 		        </div>
 			</nav>
@@ -360,7 +148,6 @@
 		  </div>
 	</header>
 <!-- menu home -->
-	
 	<section id="fh5co-home"  data-section="home"  data-stellar-background-ratio="0.5">
 	
 		<div class="flexslider">
@@ -379,14 +166,13 @@
 		
 	</section>
 
-	
 	<section id="fh5co-intro">
 		<div class="container">
 			<div class="row row-bottom-padded-lg">
 				<div class="fh5co-block to-animate col-md-3 col-sm-6 col-xxs-12"  >
 					<div class="overlay-darker"></div>
 					<div class="overlay"></div>
-					<div class="fh5co-text" onmouseover="openAudio('corpus')" onmouseout="corpus.pause();">
+					<div class="fh5co-text">
 						<img src="../images/icons/foreign_language.png" class="icons_bottom">
 						<h2>CORPUS</h2>
 						<p>We want your help to have full repository of audio and text from all South American languages.</p>
@@ -396,7 +182,7 @@
 				<div class="fh5co-block to-animate col-md-3 col-sm-6 col-xxs-12" >
 					<div class="overlay-darker"></div>
 					<div class="overlay"></div>
-					<div class="fh5co-text" onmouseover="openAudio('investigaciones')" onmouseout="investigaciones.pause();">
+					<div class="fh5co-text">
 						<img src="../images/icons/project.png" class="icons_bottom">
 						<h2>INVESTIGATIONS</h2>
 						<p>Find out what research there is related to the Quechua language or share your research with us.</p>
@@ -406,7 +192,7 @@
 				<div class="fh5co-block to-animate col-md-3 col-sm-6 col-xxs-12" >
 					<div class="overlay-darker"></div>
 					<div class="overlay"></div>
-					<div class="fh5co-text" onmouseover="openAudio('proyectos')" onmouseout="proyectos_menu.pause();">
+					<div class="fh5co-text">
 						<img src="../images/icons/subproject.png" class="icons_bottom">
 						<h2>PROJECTS</h2>
 						<p>Do you have a project? post a video and share it with the largest community of researchers in our languages.</p>
@@ -436,7 +222,7 @@
 			<div class="row">
 				
 				<div class="col-md-12 section-heading text-center" style="margin-bottom: 1px;">
-					<h2 class="" onmouseout="que_hacemos.pause();" onmouseover="openAudio('que_hacemos')"> What do we do?</h2>
+					<h2 class=""> What do we do?</h2>
 					<div class="row">
 						<div class="col-md-12 c subtext ">
 							<h3 style="text-align: justify;">
@@ -490,7 +276,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate" onmouseout="como_lo_hacemos.pause();" onmouseover="openAudio('como_lo_hacemos')">How do we do it?</h2>
+					<h2 class="to-animate">How do we do it?</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext to-animate">
 							<h3>We bring together communities, researchers, writers, artists, engineers and universities from all over South America to gather and create the largest multimedia content to computationally process our ancient indigenous languages for the benefit of all.</h3>
@@ -500,7 +286,7 @@
 			</div>
 			<div class="row row-bottom-padded-sm">
 				<div class="col-md-3 col-sm-6 col-xxs-12">
-					<a href="escritores.html" class="fh5co-project-item  to-animate" onmouseover="openAudio('escritores')" onmouseout="escritores.pause();">
+					<a href="escritores.html" class="fh5co-project-item  to-animate">
 						<img src="../images/work_1.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
 							<h2>Writers</h2>
@@ -509,7 +295,7 @@
 					</a>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xxs-12">
-					<a href="artistas.html" class="fh5co-project-item  to-animate" onmouseover="openAudio('artistas')" onmouseout="artistas.pause();">
+					<a href="artistas.html" class="fh5co-project-item  to-animate">
 						<img src="../images/work_2.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
 							<h2>Artists</h2>
@@ -518,7 +304,7 @@
 					</a>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xxs-12">
-					<a href="../images/work_3.jpg" class="fh5co-project-item image-popup to-animate"   onmouseover="openAudio('comunidad')" onmouseout="comunidad.pause();">
+					<a href="../images/work_3.jpg" class="fh5co-project-item image-popup to-animate">
 						<img src="../images/work_3.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
 							<h2>Community</h2>
@@ -527,7 +313,7 @@
 					</a>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xxs-12">
-					<a href="../images/work_4.jpg" class="fh5co-project-item image-popup to-animate" onmouseover="openAudio('investigadores_seccion')" onmouseout="investigadores_seccion.pause();">
+					<a href="../images/work_4.jpg" class="fh5co-project-item image-popup to-animate">
 						<img src="../images/work_4.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
 							<h2>Researchers</h2>
@@ -554,7 +340,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center" >
-					<h2 class="to-animate" onmouseout="que_nos_inspira.pause();" onmouseover="openAudio('que_nos_inspira')">What inspires us?</h2>
+					<h2 class="to-animate">What inspires us?</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext to-animate">
 							<h3></h3>
@@ -680,7 +466,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate"  onmouseout="proyectos_seccion.pause();" onmouseover="openAudio('proyectos_seccion')" >Projects</h2>
+					<h2 class="to-animate">Projects</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext to-animate">
 							<h3>The creativity of the community helps us to keep growing.</h3>
@@ -692,14 +478,14 @@
 				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate">
 					<a href="https://kuelap.telecom.pucp.edu.pe/corpus/login/?next=/corpus/">
 						<img src="../images/icons/audio_console.png" class="icons_bottom" >
-						<h3   onmouseout="corpus_quechua.pause();" onmouseover="openAudio('corpus_quechua')">CORPUS QUECHUA</h3>
+						<h3>CORPUS QUECHUA</h3>
 					</a>
 					<p style="font-size: 18px;">Repository of audio and transcriptions of the Quechua language, available.</p>
 				</div>
 				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate"  >
 					<a style="color:white;"  href="traductor.html">
 						<img src="../images/icons/card_design.png" class="icons_bottom">
-						<h3   onmouseout="traductor_quechua.pause();" onmouseover="openAudio('traductor_quechua')">QUECHUA TRANSLATOR</h3> 
+						<h3>QUECHUA TRANSLATOR</h3> 
 					</a>
 					<p style="font-size: 18px;">The first Quechua language voice translator available to everyone.</p>
 				</div>
@@ -707,7 +493,7 @@
 				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate"  >
 					<a style="color:white;" href="radios.html">
 						<img src="../images/icons/radio.png" class="icons_bottom">
-						<h3  onmouseout="programas_radio.pause();" onmouseover="openAudio('programas_radio')">PROGRAMAS DE RADIO</h3>
+						<h3>PROGRAMAS DE RADIO</h3>
 					</a>
 					<p style="font-size: 18px;">The community of radios that transmit their programming in the language Quechua.</p>
 				</div>
@@ -715,7 +501,7 @@
 					 <a href="https://www.qichwa.net/#/" target="_blank">
 					 <img src="images/icons/quechuadic.png" class="icons_bottom">
 					 </a>
-					<h3  onmouseout="eventos.pause();" onmouseover="openAudio('eventos')">QICHWADIC</h3>
+					<h3>QICHWADIC</h3>
 					<p style="font-size: 18px;">Virtual dictionary built based on the printed dictionaries compiled by ILLA.</p> 
 				</div>
 			</div>
@@ -758,10 +544,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate" onmouseout="nosotros_seccion.pause();" onmouseover="openAudio('nosotros_seccion')">About us</h2>
+					<h2 class="to-animate">About us</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3 onmouseout="nosotros_frase1.pause();" onmouseover="openAudio('nosotros_frase1')">We are a team with a love for the culture of our communities.</h3>
+							<h3>We are a team with a love for the culture of our communities.</h3>
 						</div>
 					</div>
 				</div>
@@ -849,33 +635,33 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center to-animate">
-					<h2 onmouseover="openAudio('estadisticas_seccion')" onmouseout="estadisticas_seccion.pause();">Statistics</h2>
+					<h2>Statistics</h2>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="fh5co-counter to-animate" onmouseover="openAudio('continente')" onmouseout="continente.pause();">
+					<div class="fh5co-counter to-animate">
 						<img src="../images/icons/geography.png" >
 						<span class="fh5co-counter-number js-counter" data-from="0" data-to="400" data-speed="5000" data-refresh-interval="50">1</span>
 						<span class="fh5co-counter-label">Languages</span>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="fh5co-counter to-animate" onmouseover="openAudio('paises')" onmouseout="paises.pause();">
+					<div class="fh5co-counter to-animate">
 						<img src="../images/icons/group.png" >
 						<span class="fh5co-counter-number js-counter" data-from="0" data-to="1200" data-speed="5000" data-refresh-interval="50">7</span>
 						<span class="fh5co-counter-label">Volunteers</span>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="fh5co-counter to-animate" onmouseover="openAudio('personas')" onmouseout="personas.pause();">
+					<div class="fh5co-counter to-animate">
 						<img src="../images/icons/group.png" >
 						<span class="fh5co-counter-number js-counter" data-from="0" data-to="15000000" data-speed="5000" data-refresh-interval="50">7'800,000</span>
 						<span class="fh5co-counter-label">Speakers</span>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="fh5co-counter to-animate" onmouseover="openAudio('lenguas')" onmouseout="lenguas.pause();">
+					<div class="fh5co-counter to-animate">
 						<img src="../images/icons/public_chat.png" >
 						<span class="fh5co-counter-number js-counter" data-from="50000" data-to="100" data-speed="5000" data-refresh-interval="50">1</span>
 						<span class="fh5co-counter-label">Corpus Quechua</span>
@@ -893,7 +679,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center" style="margin-top: 50px;">
-					<h2 class="" onmouseout="eventos.pause();" onmouseover="openAudio('eventos')"> Eventos</h2>
+					<h2 class=""> Eventos</h2>
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1 subtext ">
 							<h3>¡Coming Soon! on February 21, 2018 we will release the first version of Qillqaq, join this party !.</h3>
@@ -917,9 +703,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate" onmouseover="openAudio('contactos')"  onmouseout="contactos_seccion.pause();">Contactanos</h2>
+					<h2 class="to-animate">Contactanos</h2>
 					<div class="row">
-						<div onmouseover="openAudio('contactanos_frase') "  onmouseout="contactanos_frase.pause();"vclass="col-md-8 col-md-offset-2 subtext to-animate">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
 							<h3>Help us to preserve the most widely spoken native language in Latin America.</h3>
 						</div>
 					</div>
@@ -940,32 +726,27 @@
 					</ul>
 				</div>
 				
-			<!--	
-				<div class="col-lg-6 to-animate">	
 					
-						<h3>Contact Form</h3>
-						<div class="form-group ">
-							<label for="name" class="sr-only">Name</label>
-							<input id="name" class="form-control" placeholder="Name" type="text">
-						</div>
-						<div class="form-group ">
-							<label for="email" class="sr-only">Email</label>
-							<input id="email" class="form-control" placeholder="Email" type="email">
-						</div>
-						<div class="form-group ">
-							<label for="phone" class="sr-only">Phone</label>
-							<input id="phone" class="form-control" placeholder="Phone" type="text">
-						</div>
-						<div class="form-group ">
-							<label for="message" class="sr-only">Message</label>
-							<textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
-						</div>
-						<div class="form-group ">
-							<input class="btn btn-primary btn-lg" value="Enviar" type="submit">
-						</div>
-					</div>	
+				<form id="formulario" class="col-lg-6 to-animate">	
+					<h3>Contact Form</h3>
+					<div class="form-group ">
+						<label for="name" class="sr-only">Name</label>
+						<input id="first_name" class="form-control" placeholder="Name" type="text">
+					</div>
+					<div class="form-group ">
+						<label for="email" class="sr-only">Email</label>
+						<input id="email" class="form-control" placeholder="Email" type="Email">
+					</div>			
+					<div class="form-group ">
+						<label for="message" class="sr-only">Message</label>
+						<textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
+					</div>
+					<div class="form-group ">
+						<input class="btn btn-primary btn-lg" value="enviar" type="button" onclick="send()">
+					</div>
+				</form>	
 					
-					-->
+					
 			</div>		
 		</div>
 			
@@ -1056,7 +837,8 @@
 	<!-- Magnific Popup -->
 	<script src="../js/jquery.magnific-popup.min.js"></script>
 	<script src="../js/magnific-popup-options.js"></script> 
-
+	<!-- json -->
+	<script src="../js/json.js"></script>
 
 
 	<script type="text/javascript" src="../js/prism.js"></script>
