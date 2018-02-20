@@ -45,6 +45,11 @@
 	<!-- Demo CSS -->
 	<link rel="stylesheet" href="../css/demo.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
+	<!-- contact validation -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+	
 	<!-- Modernizr -->
 	<script src="../js/modernizr.js"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -502,7 +507,7 @@
 					 <img src="images/icons/quechuadic.png" class="icons_bottom">
 					 </a>
 					<h3>QICHWADIC</h3>
-					<p style="font-size: 18px;">Virtual dictionary built based on the printed dictionaries compiled by ILLA.</p> 
+					<p style="font-size: 18px;">Quechua multidialectal dictionary in web and mobile version.</p> 
 				</div>
 			</div>
 
@@ -726,8 +731,10 @@
 					</ul>
 				</div>
 				
-					
-				<form id="formulario" class="col-lg-6 to-animate">	
+				
+				
+				
+				<form id="formulario" class="col-lg-6 to-animate" onsubmit="return valida(this)">	
 					<h3>Contact Form</h3>
 					<div class="form-group ">
 						<label for="name" class="sr-only">Name</label>
@@ -742,9 +749,11 @@
 						<textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
 					</div>
 					<div class="form-group ">
-						<input class="btn btn-primary btn-lg" value="enviar" type="button" onclick="send()">
+						<input class="btn btn-primary btn-lg" value="Send message" type="button" onclick="sendEng()">
 					</div>
 				</form>	
+				
+				
 					
 					
 			</div>		
@@ -752,8 +761,7 @@
 			
 	<!--	<div id="map" class="to-animate"></div> -->
 	</section>
-	
-	
+		
 	<footer id="auspiciadores">
 		
 		<div class="container">
@@ -787,7 +795,7 @@
 		<div class="container">
 			<div class="">
 				<div class="col-md-12 text-center">
-					<p>&copy; University Consortium.</p>
+					<p>&copy; University Consortium.<br>Made by <a href="" target="_blank">Nelsi Melgarejo</a></p>
 				</div>
 			</div>
 			<div class="row">
