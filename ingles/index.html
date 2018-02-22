@@ -34,7 +34,7 @@
 	<link rel="stylesheet" href="../css/magnific-popup.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="../css/bootstrap.css">
-	<!-- style  -->
+		<!-- style  -->
 	<link rel="stylesheet" href="../css/style.css">
 	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
 	<link rel="stylesheet" id="theme-switch" href="../css/style.css">
@@ -504,7 +504,7 @@
 				</div>
 				<div class="col-md-3 col-sm-6 text-center fh5co-service to-animate"  >
 					 <a href="https://www.qichwa.net/#/" target="_blank">
-					 <img src="images/icons/quechuadic.png" class="icons_bottom">
+					 <img src="../images/icons/quechuadic.png" class="icons_bottom">
 					 </a>
 					<h3>QICHWADIC</h3>
 					<p style="font-size: 18px;">Quechua multidialectal dictionary in web and mobile version.</p> 
@@ -732,26 +732,32 @@
 				</div>
 				
 				
-				
-				
-				<form id="formulario" class="col-lg-6 to-animate" onsubmit="return valida(this)">	
-					<h3>Contact Form</h3>
-					<div class="form-group ">
-						<label for="name" class="sr-only">Name</label>
-						<input id="first_name" class="form-control" placeholder="Name" type="text">
-					</div>
-					<div class="form-group ">
-						<label for="email" class="sr-only">Email</label>
-						<input id="email" class="form-control" placeholder="Email" type="Email">
-					</div>			
-					<div class="form-group ">
-						<label for="message" class="sr-only">Message</label>
-						<textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
-					</div>
-					<div class="form-group ">
-						<input class="btn btn-primary btn-lg" value="Send message" type="button" onclick="sendEng()">
-					</div>
-				</form>	
+						
+				<form id="form" class="col-lg-6 to-animate" data-toggle="validator" role="form">
+                  <div class="form-group">
+                      <label class="sr-only" for="name">Name</label>
+                      <input class="form-control" data-error="* Obligatory field" id="first_name" placeholder="Name"  type="text" required />
+                      <div class="help-block with-errors"></div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" class="form-control"  data-error="* Verify the email address" id="email" placeholder="Email" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+
+                  <div class="form-group">
+                      <label class="sr-only" for="message">Message</label>
+                      <textarea class="form-control" data-error="* Obligatory field" id="message" placeholder="Message" required="" cols="30" rows="5"></textarea>
+                      <div class="help-block with-errors"></div>
+                  </div>
+
+                  <div class="form-group">
+                      <button class="btn btn-primary btn-lg" value="enviar" type="submit" >
+                          Submit
+                      </button>
+                  </div>
+               </form>
 				
 				
 					
@@ -810,11 +816,26 @@
 		</div>
 	</footer>
 	
+	<script>
+          $("#form").validator().on("submit", function (event) {
+			if (event.isDefaultPrevented()) {
+				// handle the invalid form...
+				console.log("falta llenar");
+			} else {
+				event.preventDefault();
+				send();
+					} 
+			});
+    </script>
+	
+	<!--sweetalert-->
+	<script src="../js/sweetalert2.all.js"></script>
+	<!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+	<link href="https://cdn.jsdelivr.net/sweetalert2/6.5.6/sweetalert2.min.css" rel="stylesheet" type="text/css">
 
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js">
-	</script> 
-	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js">
-	</script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js">	</script> 
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js">	</script>
 	<script type="text/javascript" src="../js/slick/slick.min.js"></script>
 	
 
@@ -846,7 +867,7 @@
 	<script src="../js/jquery.magnific-popup.min.js"></script>
 	<script src="../js/magnific-popup-options.js"></script> 
 	<!-- json -->
-	<script src="../js/json.js"></script>
+	<script src="../js/contact_eng.js"></script>
 
 
 	<script type="text/javascript" src="../js/prism.js"></script>

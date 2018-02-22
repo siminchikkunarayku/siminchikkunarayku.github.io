@@ -62,7 +62,7 @@
 	<!-- Demo CSS -->
 	<link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-	
+	<!-- contact validation -->
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
@@ -747,15 +747,12 @@
 				</div>
 					
 				
-				<form class="col-lg-6 to-animate" data-toggle="validator" role="form">
-
-
+				<form id="form" class="col-lg-6 to-animate" data-toggle="validator" role="form">
                   <div class="form-group">
                       <label class="sr-only" for="name">Name</label>
-                      <input class="form-control" data-error="* Campo obligatorio" id="name" placeholder="Name"  type="text" required />
+                      <input class="form-control" data-error="* Campo obligatorio" id="first_name" placeholder="Nombre"  type="text" required />
                       <div class="help-block with-errors"></div>
                   </div>
-
 
                   <div class="form-group">
                     <label for="email" class="sr-only">Email</label>
@@ -765,17 +762,16 @@
 
                   <div class="form-group">
                       <label class="sr-only" for="message">Mensaje</label>
-                      <textarea class="form-control" data-error="* Campo obligatorio" id="message" placeholder="Cina Saffary" required="" cols="30" rows="5"></textarea>
+                      <textarea class="form-control" data-error="* Campo obligatorio" id="message" placeholder="Mensaje" required="" cols="30" rows="5"></textarea>
                       <div class="help-block with-errors"></div>
                   </div>
-
 
                   <div class="form-group">
                       <button class="btn btn-primary btn-lg" value="enviar" type="submit" >
                           Submit
                       </button>
                   </div>
-                </form>
+               </form>
 				
 				
 			</div>		
@@ -832,6 +828,22 @@
 		</div>
 	</footer>
 	
+	
+	
+	
+	<script>
+          $("#form").validator().on("submit", function (event) {
+			if (event.isDefaultPrevented()) {
+				// handle the invalid form...
+				console.log("falta llenar");
+			} else {
+				event.preventDefault();
+				send();
+					} 
+			});
+    </script>
+	
+	
 	<!--sweetalert-->
 	<script src="js/sweetalert2.all.js"></script>
 	<!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support -->
@@ -887,7 +899,7 @@
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script> 
 	<!-- json -->
-	<script src="js/contact.js"></script>
+	<script src="js/contact_esp.js"></script>
 
 	<script type="text/javascript" src="js/prism.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
