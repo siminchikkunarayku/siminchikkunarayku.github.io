@@ -1345,7 +1345,7 @@ position: absolute;
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   box-shadow: none;
-  background: #deac39;
+  background: #A5A5AB;
 }
 .btn:hover, .btn:active, .btn:focus {
   
