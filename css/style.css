@@ -1732,4 +1732,25 @@ left:0px;
     border-radius: 0.25em;
     background-color: #ffffff;
     color: #fff;
-    font-size: 1.0625em;
+font-size: 1.0625em;
+}
+
+.section-titulos h2 {
+  margin: 0 0 30px 0;
+  font-size: 40px;
+  font-weight: 300;
+  color: #444;
+  text-transform: uppercase;
+  position: relative;
+  display: block;
+  padding-bottom: 20px;
+line-height: 1.5;}
+
+#fh5co-home .section-titulos h2 {
+    color: #fff;
+}
+
+
+
+
+	
