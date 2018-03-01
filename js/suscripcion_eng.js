@@ -1,4 +1,3 @@
-
 function send(){ 
 swal({
  title: 'Are you sure to send this form?',
@@ -27,15 +26,16 @@ function sends()
 {
 
 var first_name = document.getElementById("first_name").value;
+var last_name = document.getElementById("last_name").value;
 var email = document.getElementById("email").value;
-var message = document.getElementById("message").value;
+
 
 
 $.ajax({
 type: 'POST',
 crossDomain: true,
-url: "http://34.198.173.122:5000/contact",
-data: JSON.stringify({"email":email,"first_name":first_name,"last_name":"","message":message}),
+url: "http://34.198.173.122:5000/suscription",
+data: JSON.stringify({"email":email,"first_name":first_name,"last_name":last_name}),
 error: function(e) {
 console.log(e);
 },
@@ -49,7 +49,8 @@ contentType: "application/json"
 });
 
 document.getElementById("first_name").value="";
+document.getElementById("last_name").value="";
 document.getElementById("email").value="";
-document.getElementById("message").value="";
+
 }
 

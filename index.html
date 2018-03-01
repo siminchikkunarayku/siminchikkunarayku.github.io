@@ -119,11 +119,22 @@
 </head>
 <body>
 	<section>
-		<div style="background: #00a7a3; height:50px;">
-			<div class="search col-xs-12 col-sm-6 col-md-6 col-lg-3">
-			   <!-- <input id="search" class="search-input " type="text"> <i style="color:white;" class="icon-search2" aria-hidden="true"></i>
-			   -->
-			</div> 
+		<div class="" style="background: #00a7a3; height:50px;">
+			<div class="container">
+				<li class="multilang">
+					<a href="#" data-nav-section="idiomas">
+						<select name="lang" class="jflanguageselection" size="1" onchange="document.location.replace(this.value);" >
+							<option value="#" selected="selected">Español</option>
+							<option value="ingles/index.html">English</option>
+							<option value="quechua/index.html">Quechua</option>
+						</select>
+					</a>
+				</li>
+				<li class="suscripcion">
+					<a href="suscripcion.html" class="btn btn-primary ">Suscribete</a>
+				</li>
+				
+			</div>
 		</div>
 	</section>
 
@@ -149,15 +160,7 @@
 						<li><a href="#" data-nav-section="services"><span>Proyectos</span></a></li>
 						<li><a href="#" data-nav-section="about"><span>Nosotros</span></a></li>
 						<li><a href="#" data-nav-section="eventos"><span>Eventos</span></a></li>
-						<li class="multilang">
-						<a href="#" data-nav-section="idiomas">
-							<select name="lang" class="jflanguageselection" size="1" onchange="document.location.replace(this.value);" >
-								<option value="#" selected="selected">Español</option>
-								<option value="ingles/index.html">English</option>
-								<option value="quechua/index.html">Quechua</option>
-							</select>
-							</a> 
-						</li>
+						
 					  </ul>
 		        </div>
 			</nav>

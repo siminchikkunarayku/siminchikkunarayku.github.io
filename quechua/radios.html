@@ -305,12 +305,22 @@
 	<body>
 
 	<section>
-	<div style="background: #00a7a3; height:50px;">
-				<!-- <div class="row"> -->
-			<div class="search">
-			  <!-- <input id="search" class="search-input " type="text"> <i style="color:white;" class="icon-search2" aria-hidden="true"></i>
-			   --></div> 
-    </div>
+		<div class="" style="background: #00a7a3; height:50px;">
+			<div class="container">
+				<li class="multilang">
+					<a href="#" data-nav-section="idiomas" onmouseover="openAudio('idiomas');" onmouseout="idiomas.pause();" >
+						<select name="lang" class="jflanguageselection" size="1" onchange="document.location.replace(this.value);">
+							<option value="../radios.html" >Español</option>
+							<option value="">English</option>
+							<option value="../quechua/radios.html" selected="selected">Quechua</option>
+						</select>
+					</a>  
+				</li>
+				<li class="suscripcion">
+					<a href="suscripcion.html" class="btn btn-primary ">Yaykupakamuy</a>
+				</li>
+			</div>
+		</div>
 	</section>
 	<header role="banner" id="fh5co-header">
 
@@ -320,6 +330,7 @@
 		        	<!-- Mobile Toggle Menu Button -->
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
 					<a class="navbar-brand" style = "background-image: url(../images/logoreal.png); width: 60px; height: 60px;" href="index.html">
+						<p style="  text-indent: 60px;   text-transform: uppercase; color: #000; font-size: 18px; ">siminchikkunarayku</p>
 					</a> 
 				</div>
 				
@@ -333,13 +344,6 @@
 						<li><a href="#" data-nav-section="services" onmouseover="openAudio('proyectos');" onmouseout="proyectos.pause();" ><span>Ruwayninchik</span></a></li>
 						<li><a href="#" data-nav-section="about" onmouseover="openAudio('nosotros');" onmouseout="nosotros.pause();" ><span>Ñuqanchik</span></a></li>
 						<li><a href="#" data-nav-section="eventos" onmouseover="openAudio('eventos');" onmouseout="eventos.pause();" ><span>Quñunakuykuna</span></a></li>
-						<li class="multilang"><a href="#" data-nav-section="idiomas" onmouseover="openAudio('idiomas');" onmouseout="idiomas.pause();" >
-							<select name="lang" class="jflanguageselection" size="1" onchange="document.location.replace(this.value);">
-								<option value="../radios.html" >Español</option>
-								<option value="">English</option>
-								<option value="../quechua/radios.html" selected="selected">Quechua</option>
-							</select></a>  
-						</li>
 						<li><img id="imagen" src="../images/icons/image1.png" onclick="cambiar(this);" class="img-responsive; background-position:center; " style="width:20px; height:20px; margin-top: 20px;"></li>
 					  </ul>
 		        </div>
@@ -365,7 +369,7 @@ function openSection(texto){
 <div class="work-overlay"> </div>
 		<div class="container">
 			<br>
-<article class="col-lg-12  col-md-12  col-sm-12  col-xs-12">
+<article class="col-lg-12  col-md-12">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center" style="margin-bottom: 10px;">
 				<br>
@@ -781,7 +785,7 @@ text-align: center;
 	</script> 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js">
 	</script>
-	<script type="text/javascript" src="js/slick/slick.min.js"></script>
+	<script type="text/javascript" src="../js/slick/slick.min.js"></script>
 	
 
 
@@ -818,63 +822,18 @@ text-align: center;
 	<script type="text/javascript" src="../js/scripts.js"></script>
 	<script src="../css/slick.min.js"></script> 
 
-	<!-- Google Map -->
-	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script> -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false">
-	</script>
 
-
-
-	<script src="../js/google_map.js"></script>
 
 	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
 	<script src="../js/jquery.style.switcher.js"></script>
 	  <script defer src="../js/jquery.flexslider.js"></script>
 
   <script defer src="../js/demo.js"></script>
-	<script>
-		$(function(){
-			$('#colour-variations ul').styleSwitcher({
-				defaultThemeId: 'theme-switch',
-				hasPreview: false,
-				cookie: {
-		          	expires: 30,
-		          	isManagingLoad: true
-		      	}
-			});	
-			$('.option-toggle').click(function() {
-				$('#colour-variations').toggleClass('sleep');
-			});
-		});
-	</script>
+	
 	<!-- End demo purposes only -->
 
 	<!-- Main JS (Do not remove) -->
 	<script src="../js/main.js"></script>
-
-  
-
-	<script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('.flexslider').flexslider({
-        animation: "slide",
-        controlsContainer: $(".custom-controls-container"),
-        customDirectionNav: $(".custom-navigation a"),
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
-  
-  <script type="text/javascript">
-  	$(document).ready(function() {
-    $('.data').slick();
-	});
-  </script>
 
 	</body>
 </html>

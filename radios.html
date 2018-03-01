@@ -64,191 +64,14 @@
 	  gtag('config', 'UA-113083764-1');
 	</script>
 
-	<script>
-	// Array con todas las imágenes que deseamos que se vayan cambiando a cada clic
-	var imagenes=Array("images/icons/image1.png","images/icons/image2.png");
-	var imagenVisible=0;
- 
-	// Función que cambia la imagen actual por la siguiente
-	function cambiar(img)
-	{
-		imagenVisible++;
-		if(imagenVisible>=imagenes.length)
-		{
-			imagenVisible=0;
-		}
-		img.src=imagenes[imagenVisible];
-		cargarSiguienteImagen();
-	}
- 
-	// Esta función carga la siguiente imagen para no tener que esperar su carga en el momento de mostrarla.
-	function cargarSiguienteImagen()
-	{
-		if((imagenVisible+1)<imagenes.length)
-		{
-			console.log(imagenVisible+1);
-			var imgTmp=new Image();
-			imgTmp.src=imagenes[imagenVisible+1];
-		}
-	}
- 
-	window.onload=function() {
-		cargarSiguienteImagen();
-	}
-	
-	
-	
-	
-	function openAudio(word){
-			
-		    var imagen = document.getElementById('imagen').src;
-			var flag = "0";
-			if (imagen.includes('1')){
-				flag = 1;
-			} else {
-				flag = 0;
-			}			
-		
-			if (flag == "1"){
-				if (word == "quechua") quechua.play();
-				if (word == "que") que.play();
-				if (word == "como") como.play();
-				if (word == "inspiracion") inspiracion.play();
-				if (word == "proyectos") proyectos.play();
-				if (word == "nosotros") nosotros.play();
-				if (word == "eventos") eventos.play();
-				if (word == "contactos") contactos.play();
-				if (word == "idiomas") idiomas.play();
-				
-				if (word == "corpus") corpus.play();
-				if (word == "investigaciones") investigaciones.play();
-				if (word == "proyectos_menu") proyectos_menu.play();
-				if (word == "que_hacemos") que_hacemos.play();
-				if (word == "como_lo_hacemos") como_lo_hacemos.play();
-				if (word == "que_nos_inspira") que_nos_inspira.play();
-				
-				if (word == "proyectos_seccion") proyectos_seccion.play();
-				if (word == "corpus_quechua") corpus_quechua.play();
-				if (word == "traductor_quechua") traductor_quechua.play();
-				if (word == "programas_radio") programas_radio.play();
-				//if (word == "eventos") que_nos_inspira.play();
-				
-				if (word == "nosotros_seccion") nosotros_seccion.play();
-				if (word == "nosotros_frase1") nosotros_frase1.play();
-				
-				if (word == "escritores") escritores.play();
-				if (word == "artistas") artistas.play();
-				if (word == "comunidad") comunidad.play();
-				if (word == "investigadores_seccion") investigadores_seccion.play();
-				if (word == "ingenieros") ingenieros.play();
-				if (word == "universidades") universidades.play();
-				
-				if (word == "contactanos_seccion") contactanos_seccion.play();
-				if (word == "contactanos_frase") contactanos_frase.play();
-				
-				if (word == "estadisticas_seccion") estadisticas_seccion.play();
-				if (word == "continente") continente.play();
-				if (word == "paises") paises.play();
-				if (word == "personas") personas.play();
-				if (word == "lenguas") lenguas.play();
-			}
-	}
-		
-	</script>
+
+
 	
 	<style>
 	img {cursor:pointer;}
 	</style>
 	
-	<script type="text/javascript">
-	var quechua = new Audio();
-	var que = new Audio();
-	var como = new Audio();
-	var inspiracion = new Audio();
-	var proyectos = new Audio();
-	var nosotros = new Audio();
-	var eventos = new Audio();
-	var idiomas = new Audio();
-	var contactos = new Audio();
-
-	var corpus = new Audio();
-	var investigaciones = new Audio();
-	var proyectos_menu = new Audio();
-	var que_hacemos = new Audio();
-	var como_lo_hacemos = new Audio();
-	var que_nos_inspira = new Audio();
-
-	var proyectos_seccion = new Audio();
-	var corpus_quechua = new Audio();
-	var traductor_quechua = new Audio();
-	var programas_radio = new Audio();
-	var eventos = new Audio();
-
-	var nosotros_seccion = new Audio();
-	var nosotros_frase1 = new Audio();
-
-
-	var escritores = new Audio();
-	var artistas = new Audio();
-	var comunidad = new Audio();
-	var investigadores_seccion = new Audio();
-	var ingenieros = new Audio();
-	var universidades = new Audio();
-
-
-	var contactanos_seccion = new Audio();
-	var contactanos_frase = new Audio();
-
-	var estadisticas_seccion = new Audio();
-	var continente = new Audio();
-	var paises = new Audio();
-	var personas = new Audio();
-	var lenguas = new Audio();
-
-	quechua.src = 'audio/siminchikmanta.mp3';
-	como.src = 'audio/como.mp3';
-	que.src = 'audio/que.mp3';
-	inspiracion.src = 'audio/munayninchik.mp3';
-	proyectos.src = 'audio/ruwayninchik.mp3';
-	nosotros.src = 'audio/nuqanchik.mp3';
-	eventos.src = 'audio/llamkayninchikkuna.mp3';
-	idiomas.src = 'audio/idiomas.mp3';
-	contactos.src = 'audio/riqsinakusun_1.mp3';
-
-	corpus.src = 'audio/qillqakuna_uyariykunapas_1.mp3';
-	investigaciones.src = 'audio/yachay_maskapaykuna.mp3';
-	que_hacemos.src = 'audio/que_hacemos.mp3';
-	proyectos_menu.src = 'audio/ruwaykuna.mp3';
-	como_lo_hacemos.src = 'audio/imaynatam_ruwasunchik.mp3';
-	que_nos_inspira.src = 'audio/imam_sunqunchikta_kuyuchin.mp3';
-
-	proyectos_seccion.src = 'audio/ruwayninchikkuna.mp3';
-	corpus_quechua.src = 'audio/qillqakuna_uyariykunapas.mp3';
-	traductor_quechua.src = 'audio/siminchik_tikrachik.mp3';
-	programas_radio.src = 'audio/wayra_wasipi_rimaykuna.mp3';
-	eventos.src = 'audio/llamkayninchikkuna.mp3';
-
-
-	nosotros_seccion.src = 'audio/nuqaykumanta.mp3';
-	nosotros_frase1.src = 'audio/frase1.mp3';
-
-	escritores.src = 'audio/qillqaqkuna.mp3';
-	artistas.src = 'audio/takiqkuna.mp3';
-	comunidad.src = 'audio/runamasinchikkuna.mp3';
-	investigadores_seccion.src = 'audio/yachay_qatipaqkuna.mp3';
-	ingenieros.src = 'audio/qispichikkuna.mp3';
-	universidades.src = 'audio/hatun_yachay_wasikuna.mp3';
-
-	contactanos_seccion.src = 'audio/riqsinakusun_2.mp3';
-	contactanos_frase.src = 'audio/frase2.mp3';
-
-	estadisticas_seccion.src = 'audio/yupaykuna.mp3';
-	continente.src = 'audio/tiqsimuyu.mp3';
-	paises.src = 'audio/suyukuna.mp3';
-	personas.src = 'audio/runakuna.mp3';
-	lenguas.src = 'audio/simikuna.mp3';
-
-	</script>
+	
 
 <!-- Demo CSS -->
   <link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" />
@@ -307,12 +130,23 @@
 	<body>
 
 	<section>
-	<div style="background: #00a7a3; height:50px;">
-				<!-- <div class="row"> -->
-			<div class="search">
-			  <!-- <input id="search" class="search-input " type="text"> <i style="color:white;" class="icon-search2" aria-hidden="true"></i>
-			   --></div> 
-    </div>
+		<div class="" style="background: #00a7a3; height:50px;">
+			<div class="container">
+				<li class="multilang">
+					<a href="#" data-nav-section="idiomas" onmouseover="openAudio('idiomas');" onmouseout="idiomas.pause();" >
+						<select name="lang" class="jflanguageselection" size="1" onchange="document.location.replace(this.value);">
+							<option value="radios.html" selected="selected">Español</option>
+							<option value="">English</option>
+							<option value="quechua/radios.html">Quechua</option>
+						</select>
+					</a> 
+				</li>
+				<li class="suscripcion">
+					<a href="suscripcion.html" class="btn btn-primary ">Suscribete</a>
+				</li>
+				
+			</div>
+		</div>
 	</section>
 	<header role="banner" id="fh5co-header">
 
@@ -332,22 +166,16 @@
 				
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
-		            <li class="active"><a href="#" onclick="openSection('fh5co-intro')" data-nav-section="home" onmouseover="openAudio('quechua')" onmouseout="quechua.pause();"><span>Quechua</span></a></li>
-		            <li><a href="#" onclick="openSection('fh5co-que')" data-nav-section="que" onmouseover="openAudio('que');" onmouseout="que.pause();"><span>¿Que?</span></a></li>
-					<li><a href="#" onclick="openSection('fh5co-work')" data-nav-section="work" onmouseover="openAudio('como');" onmouseout="como.pause();"><span>¿Cómo?</span></a></li>
-		            <li><a href="#" onclick="openSection('fh5co-testimonials')" data-nav-section="testimonials" onmouseover="openAudio('inspiracion');" onmouseout="inspiracion.pause();"><span>Inspiración</span></a></li>
-		            <li><a href="#" onclick="openSection('fh5co-services')" data-nav-section="services" onmouseover="openAudio('proyectos');" onmouseout="proyectos.pause();" ><span>Proyectos</span></a></li>
-		            <li><a href="#" onclick="openSection('fh5co-about')" data-nav-section="about" onmouseover="openAudio('nosotros');" onmouseout="nosotros.pause();" ><span>Nosotros</span></a></li>
-					<li><a href="#" onclick="openSection('fh5co-eventos')" data-nav-section="eventos" onmouseover="openAudio('eventos');" onmouseout="eventos.pause();" ><span>Eventos</span></a></li>
+		            <li class="active"><a href="#" onclick="openSection('fh5co-intro')" data-nav-section="home" ><span>Quechua</span></a></li>
+		            <li><a href="#" onclick="openSection('fh5co-que')" data-nav-section="que"><span>¿Que?</span></a></li>
+					<li><a href="#" onclick="openSection('fh5co-work')" data-nav-section="work" ><span>¿Cómo?</span></a></li>
+		            <li><a href="#" onclick="openSection('fh5co-testimonials')" data-nav-section="testimonials" ><span>Inspiración</span></a></li>
+		            <li><a href="#" onclick="openSection('fh5co-services')" data-nav-section="services" ><span>Proyectos</span></a></li>
+		            <li><a href="#" onclick="openSection('fh5co-about')" data-nav-section="about"><span>Nosotros</span></a></li>
+					<li><a href="#" onclick="openSection('fh5co-eventos')" data-nav-section="eventos"><span>Eventos</span></a></li>
 		            <!--<li><a href="#" data-nav-section="contact" onmouseout="contactos.pause();" onmouseover="contactos.play()"><span>Contactos</span></a></li>-->
-					<li class="multilang"><a href="#" data-nav-section="idiomas" onmouseover="openAudio('idiomas');" onmouseout="idiomas.pause();" >
-						<select name="lang" class="jflanguageselection" size="1" onchange="document.location.replace(this.value);">
-							<option value="radios.html" selected="selected">Español</option>
-							<option value="">English</option>
-							<option value="quechua/radios.html">Quechua</option>
-						</select></a> 
-					</li>
-					<li><img id="imagen" src="images/icons/image1.png" onclick="cambiar(this);" class="img-responsive; background-position:center; " style="width:20px; height:20px; margin-top: 20px;"></li>
+					
+					
 		          </ul>
 		        </div>
 			    </nav>
@@ -792,15 +620,8 @@ text-align: center;
 	
 
 
-	<script type="text/javascript">
-    $(document).ready(function(){
-      $('.slider').slick({
-      	dots : true,
-      	speed: 1000,
-      	autoplay: true
-      });
-    });
-  </script>
+
+	
 
 
 	<!-- jQuery -->
@@ -824,15 +645,6 @@ text-align: center;
 	<script type="text/javascript" src="js/prism.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 	<script src="css/slick.min.js"></script> 
-
-	<!-- Google Map -->
-	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script> -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false">
-	</script>
-
-
-
-	<script src="js/google_map.js"></script>
 
 	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
 	<script src="js/jquery.style.switcher.js"></script>

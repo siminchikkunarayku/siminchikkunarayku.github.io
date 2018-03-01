@@ -54,12 +54,14 @@
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
 	<!-- json -->
-	<script src="js/contact_sus.js"></script>
+	<script src="js/suscripcion_esp.js"></script>
 	<!--sweetalert-->
 	<script src="js/sweetalert2.all.js"></script>
 	<!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
 	<link href="https://cdn.jsdelivr.net/sweetalert2/6.5.6/sweetalert2.min.css" rel="stylesheet" type="text/css">
+	
+	
 	<style type="text/css">
 	#musica {height:0;width:0;}
 	</style>
@@ -73,10 +75,7 @@
 	  gtag('config', 'UA-113083764-1');
 	</script>
 	
-	<script>
-	// Array con todas las imágenes que deseamos que se vayan cambiando a cada clic
-	var imagenes=Array("images/icons/image1.png","images/icons/image2.png");
-	var imagenVisible=0;
+	
  
 	
 	<style>
@@ -142,12 +141,19 @@
 	<body>
 
 	<section>
-	<div style="background: #00a7a3; height:50px;">
-				<!-- <div class="row"> -->
-			<div class="search">
-			  <!-- <input id="search" class="search-input " type="text"> <i style="color:white;" class="icon-search2" aria-hidden="true"></i>
-			   --></div> 
-    </div>
+		<div style="background: #00a7a3; height:50px;">
+			<div class="container">
+				<li class="multilang">
+					<a href="#" data-nav-section="idiomas">
+						<select name="lang" class="jflanguageselection" size="1" onchange="document.location.replace(this.value);" >
+							<option value="#" selected="selected">Español</option>
+							<option value="ingles/suscripcion.html">English</option>
+							<option value="quechua/suscripcion.html">Quechua</option>
+						</select>
+					</a>
+				</li>			
+			</div>
+		</div>
 	</section>
 	<header role="banner" id="fh5co-header">
 
@@ -163,20 +169,14 @@
 				
 		        <div id="navbar" class="navbar-collapse collapse">
 					  <ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="#" data-nav-section="home" onmouseover="openAudio('quechua')" onmouseout="quechua.pause();"><span>Quechua</span></a></li>
-						<li><a href="#" data-nav-section="que" onmouseover="openAudio('que');" onmouseout="que.pause();"><span>¿Que?</span></a></li>
-						<li><a href="#" data-nav-section="work" onmouseover="openAudio('como');" onmouseout="como.pause();"><span>¿Cómo?</span></a></li>
-						<li><a href="#" data-nav-section="testimonials" onmouseover="openAudio('inspiracion');" onmouseout="inspiracion.pause();"><span>Inspiración</span></a></li>
-						<li><a href="#" data-nav-section="services" onmouseover="openAudio('proyectos');" onmouseout="proyectos.pause();" ><span>Proyectos</span></a></li>
-						<li><a href="#" data-nav-section="about" onmouseover="openAudio('nosotros');" onmouseout="nosotros.pause();" ><span>Nosotros</span></a></li>
-						<li><a href="#" data-nav-section="eventos" onmouseover="openAudio('eventos');" onmouseout="eventos.pause();" ><span>Eventos</span></a></li>
-						<li class="multilang"><a href="#" data-nav-section="idiomas" onmouseover="openAudio('idiomas');" onmouseout="idiomas.pause();" >
-							<select name="lang" class="jflanguageselection" size="1" onchange="document.location.replace(this.value);">
-								<option value="#" selected="selected">Español</option>
-								<option value="ingles/traductor.html">English</option>
-								<option value="quechua/traductor.html">Quechua</option>
-							</select></a> 
-						</li>
+						<li class="active"><a href="#" data-nav-section="home"><span>Quechua</span></a></li>
+						<li><a href="#" data-nav-section="que"><span>¿Que?</span></a></li>
+						<li><a href="#" data-nav-section="work"><span>¿Cómo?</span></a></li>
+						<li><a href="#" data-nav-section="testimonials"><span>Inspiración</span></a></li>
+						<li><a href="#" data-nav-section="services"><span>Proyectos</span></a></li>
+						<li><a href="#" data-nav-section="about"><span>Nosotros</span></a></li>
+						<li><a href="#" data-nav-section="eventos"><span>Eventos</span></a></li>
+						
 					
 					  </ul>
 		        </div>
@@ -205,18 +205,14 @@ function openSection(texto){
 
 	<section id="fh5co-work" data-section="services" >
 	<div class="work-overlay"></div>
+	<br>
+	<br>
 		<div class="container">
-
 			<div class="row col-md-5 ">
 				<div class="  section-titulos ">
-				
-				<br>
+					<br>
 					<h2 ALIGN="center">SUSCRÍBETE A SIMINCHIKKUNARAYKU</h2>
-					
 				</div>
-				
-				
-		
 			</div>
 			<form id="form" class="col-lg-6 col-md-offset-1 to-animate" data-toggle="validator" role="form">
                   <div class="form-group">
@@ -243,12 +239,10 @@ function openSection(texto){
                       </button>
                   </div>
                </form>
-			
-			</div>
-			<br>
-				<br>
-				<br>
+				
 		</div>
+		<br>
+		<br>
 	</section>
 
 	
@@ -326,35 +320,13 @@ function openSection(texto){
 	<script type="text/javascript" src="js/scripts.js"></script>
 	<script src="css/slick.min.js"></script> 
 
-	<!-- Google Map -->
-	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script> -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false">
-	</script>
-
-
-
-	<script src="js/google_map.js"></script>
-
+	
 	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
 	<script src="js/jquery.style.switcher.js"></script>
 	  <script defer src="js/jquery.flexslider.js"></script>
 
   <script defer src="js/demo.js"></script>
-	<script>
-		$(function(){
-			$('#colour-variations ul').styleSwitcher({
-				defaultThemeId: 'theme-switch',
-				hasPreview: false,
-				cookie: {
-		          	expires: 30,
-		          	isManagingLoad: true
-		      	}
-			});	
-			$('.option-toggle').click(function() {
-				$('#colour-variations').toggleClass('sleep');
-			});
-		});
-	</script>
+	
 	<!-- End demo purposes only -->
 
 	<!-- Main JS (Do not remove) -->
@@ -362,27 +334,8 @@ function openSection(texto){
 
   
 
-	<script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('.flexslider').flexslider({
-        animation: "slide",
-        controlsContainer: $(".custom-controls-container"),
-        customDirectionNav: $(".custom-navigation a"),
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
-  
-  <script type="text/javascript">
-  	$(document).ready(function() {
-    $('.data').slick();
-	});
-  </script>
+	
+ 
 
 	</body>
 </html>

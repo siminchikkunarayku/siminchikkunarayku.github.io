@@ -112,12 +112,25 @@
 <body>
 
 	<section>
-		<div style="background: #00a7a3; height:50px;">
-			<!--<div class="search col-xs-12 col-sm-6 col-md-6 col-lg-3">
-			    <input id="search" class="search-input " type="text"> <i style="color:white;" class="icon-search2" aria-hidden="true"></i>
-			</div>-->
+		<div class="" style="background: #00a7a3; height:50px;">
+			<div class="container">
+				<li class="multilang">
+					<a href="#" data-nav-section="idiomas" >
+						<select name="lang" class="jflanguageselection" size="1" onchange="document.location.replace(this.value);">
+							<option value="../index.html">Español</option>
+							<option value="index.html" selected="selected" >English</option>
+							<option value="../quechua/index.html">Quechua</option>
+						</select>
+					</a> 
+				</li>
+				<li class="suscripcion">
+					<a href="suscripcion.html" class="btn btn-primary ">SUBSCRIBE</a>
+				</li>
+				
+			</div>
 		</div>
 	</section>
+
 
 	<header role="banner" id="fh5co-header">
 
@@ -139,13 +152,7 @@
 						<li><a href="#" data-nav-section="services"  ><span>Projects</span></a></li>
 						<li><a href="#" data-nav-section="about"  ><span>We are</span></a></li>
 						<li><a href="#" data-nav-section="eventos" ><span>Events</span></a></li>
-						<li class="multilang"><a href="#" data-nav-section="idiomas" >
-							<select name="lang" class="jflanguageselection" size="1" onchange="document.location.replace(this.value);">
-								<option value="../index.html">Español</option>
-								<option value="index.html" selected="selected" >English</option>
-								<option value="../quechua/index.html">Quechua</option>
-							</select></a> 
-						</li>
+						
 					  </ul>
 		        </div>
 			</nav>
@@ -468,7 +475,7 @@
 
 <!-- proyectos -->
 
-	<section id="fh5co-services" data-section="services" style="background: url(images/micro.jpg); background-size: cover; background-attachment: fixed; background-position: center; background-repeat:no-repeat; min-height: 20px;">
+	<section id="fh5co-services" data-section="services" style="background: url(../images/micro.jpg); background-size: cover; background-attachment: fixed; background-position: center; background-repeat:no-repeat; min-height: 20px;">
 		<div class="services-overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -879,14 +886,7 @@
 	<script type="text/javascript" src="../js/scripts.js"></script>
 	<script src="../css/slick.min.js"></script> 
 
-	<!-- Google Map -->
-	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script> -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false">
-	</script>
-
-
-
-	<script src="../js/google_map.js"></script>
+	
 
 	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
 	<script src="../js/jquery.style.switcher.js"></script>

@@ -1338,10 +1338,10 @@ position: absolute;
   transition: 0.3s;
 }
 .btn.btn-primary {
-  background: rgb(115, 119, 119);;
+  background: rgb(126, 136, 140);;
   color: #fff;
   border: none !important;
-  border: 2px solid transparent !important;
+  border: 2px solid #ffffff !important;
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   box-shadow: none;
@@ -1706,6 +1706,19 @@ left:0px;
     border-style: initial !important;
     border-color: initial !important;
     border-image: initial !important;
+	    float: right;
+    margin: 2.5px 0px  ;
+    border-radius: 5px;
+	padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 5px;
+    border-left-width: 5px;
 }
 
 
@@ -1750,7 +1763,23 @@ line-height: 1.5;}
     color: #fff;
 }
 
+.suscripcion{
+	float: right;
+	margin: 2.5px 15px 0 0;
+    border-radius: 5px;
+	list-style:none;
+}
 
-
-
-	
+.multilang{
+	text-transform: uppercase;
+	float: right;
+    margin: 4.5px 10px;
+    border-radius: 5px;
+	list-style:none;
+	 background: rgb(255, 255, 255);
+  color: #fff;
+  border: none !important;
+  border: 2px solid transparent !important;
+  
+    
+}

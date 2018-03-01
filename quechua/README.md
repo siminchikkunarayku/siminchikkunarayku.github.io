@@ -1,1 +1,0 @@
-# siminchikkunarayku.github.io

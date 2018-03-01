@@ -302,12 +302,23 @@
 	<body>
 
 	<section>
-	<div style="background: #00a7a3; height:50px;">
-				<!-- <div class="row"> -->
-			<div class="search">
-			  <!-- <input id="search" class="search-input " type="text"> <i style="color:white;" class="icon-search2" aria-hidden="true"></i>
-			   --></div> 
-    </div>
+		<div class="" style="background: #00a7a3; height:50px;">
+			<div class="container">
+				<li class="multilang">
+					<a href="#" data-nav-section="idiomas" onmouseover="openAudio('idiomas');" onmouseout="idiomas.pause();" >
+						<select name="lang" class="jflanguageselection" size="1" onchange="document.location.replace(this.value);">
+							<option value="../traductor.html" >Español</option>
+							<option value="">English</option>
+							<option value="../quechua/traductor.html" selected="selected">Quechua</option>
+						</select>
+					</a> 
+				</li>
+				<li class="suscripcion">
+					<a href="suscripcion.html" class="btn btn-primary ">Yaykupakamuy</a>
+				</li>
+				
+			</div>
+		</div>
 	</section>
 	<header role="banner" id="fh5co-header">
 
@@ -330,13 +341,6 @@
 						<li><a href="#" data-nav-section="services" onmouseover="openAudio('proyectos');" onmouseout="proyectos.pause();" ><span>Ruwayninchik</span></a></li>
 						<li><a href="#" data-nav-section="about" onmouseover="openAudio('nosotros');" onmouseout="nosotros.pause();" ><span>Ñuqanchik</span></a></li>
 						<li><a href="#" data-nav-section="eventos" onmouseover="openAudio('eventos');" onmouseout="eventos.pause();" ><span>Quñunakuykuna</span></a></li>
-						<li class="multilang"><a href="#" data-nav-section="idiomas" onmouseover="openAudio('idiomas');" onmouseout="idiomas.pause();" >
-							<select name="lang" class="jflanguageselection" size="1" onchange="document.location.replace(this.value);">
-								<option value="../traductor.html" >Español</option>
-								<option value="">English</option>
-								<option value="../quechua/traductor.html" selected="selected">Quechua</option>
-							</select></a> 
-						</li>
 						<li><img id="imagen" src="../images/icons/image1.png" onclick="cambiar(this);" class="img-responsive; background-position:center; " style="width:20px; height:20px; margin-top: 20px;"></li>
 					  </ul>
 		        </div>
@@ -369,10 +373,10 @@ function openSection(texto){
 
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
-					<h2 class="" >TRADUCTOR QUECHUA</h2>
+					<h2 class="" >qichwasimi tikraq</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 ">
-							<h3>El primer traductor de voz de la lengua Quechua disponible para todo el mundo.</h3>
+							<h3>umalliq qichwasimi tikraq llapallan tiqsi muyupaq.</h3>
 						</div>
 					</div>
 				</div>
@@ -424,7 +428,7 @@ function openSection(texto){
 		<div class="container">
 			<div class="">
 				<div class="col-md-12 text-center">
-					<p>&copy; Consorcio de Universidades.<br>Creado por <a href="https://twitter.com/nelsibelly" target="_blank">Nelsi Melgarejo</a></p>
+					<p>&copy; Consorcio de Universidades.</p>
 					
 				</div>
 			</div>
@@ -452,15 +456,7 @@ function openSection(texto){
 	
 
 
-	<script type="text/javascript">
-    $(document).ready(function(){
-      $('.slider').slick({
-      	dots : true,
-      	speed: 1000,
-      	autoplay: true
-      });
-    });
-  </script>
+	
 
 
 	<!-- jQuery -->
@@ -485,35 +481,14 @@ function openSection(texto){
 	<script type="text/javascript" src="../js/scripts.js"></script>
 	<script src="../css/slick.min.js"></script> 
 
-	<!-- Google Map -->
-	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script> -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false">
-	</script>
-
-
-
-	<script src="../js/google_map.js"></script>
+	
 
 	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
 	<script src="../js/jquery.style.switcher.js"></script>
 	  <script defer src="../js/jquery.flexslider.js"></script>
 
   <script defer src="../js/demo.js"></script>
-	<script>
-		$(function(){
-			$('#colour-variations ul').styleSwitcher({
-				defaultThemeId: 'theme-switch',
-				hasPreview: false,
-				cookie: {
-		          	expires: 30,
-		          	isManagingLoad: true
-		      	}
-			});	
-			$('.option-toggle').click(function() {
-				$('#colour-variations').toggleClass('sleep');
-			});
-		});
-	</script>
+	
 	<!-- End demo purposes only -->
 
 	<!-- Main JS (Do not remove) -->
@@ -521,27 +496,8 @@ function openSection(texto){
 
   
 
-	<script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('.flexslider').flexslider({
-        animation: "slide",
-        controlsContainer: $(".custom-controls-container"),
-        customDirectionNav: $(".custom-navigation a"),
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
+	
   
-  <script type="text/javascript">
-  	$(document).ready(function() {
-    $('.data').slick();
-	});
-  </script>
 
 	</body>
 </html>

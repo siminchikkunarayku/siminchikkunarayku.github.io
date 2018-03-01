@@ -54,58 +54,6 @@
 	<style type="text/css">
 	#musica {height:0;width:0;}
 	</style>
-
-	<script>
-	// Array con todas las imágenes que deseamos que se vayan cambiando a
-	// cada clic
-	var imagenes=Array("../images/icons/image1.png","../images/icons/image2.png");
-	var imagenVisible=0;
- 
-	// Función que cambia la imagen actual por la siguiente
-	function cambiar(img)
-	{
-		imagenVisible++;
-		if(imagenVisible>=imagenes.length)
-		{
-			imagenVisible=0;
-		}
-		img.src=imagenes[imagenVisible];
-		cargarSiguienteImagen();
-	}
- 
-	/**
-	 * Esta función carga la siguiente imagen para no tener que esperar su carga
-	 * en el momento de mostrarla.
-	 */
-	function cargarSiguienteImagen()
-	{
-		if((imagenVisible+1)<imagenes.length)
-		{
-			console.log(imagenVisible+1);
-			var imgTmp=new Image();
-			imgTmp.src=imagenes[imagenVisible+1];
-		}
-	}
- 
-	window.onload=function() {
-		cargarSiguienteImagen();
-	}
-	
-	
-	
-	
-	function openAudio(word){
-			
-		    var imagen = document.getElementById('imagen').src;
-			var flag = "0";
-			if (imagen.includes('1')){
-				flag = 1;
-			} else {
-				flag = 0;
-			}			
-		}
-		
-	</script>
 	
 	<style>
 	img {cursor:pointer;}
@@ -173,12 +121,23 @@
 	<body>
 
 	<section>
-	<div style="background: #00a7a3; height:50px;">
-				<!-- <div class="row"> -->
-			<div class="search">
-			  <input id="search" class="search-input"  type="text"> <i style="color:white;" class="icon-search2" aria-hidden="true"></i>
-			</div> 
-    </div>
+		<div class="" style="background: #00a7a3; height:50px;">
+			<div class="container">
+				<li class="multilang">
+					<a href="#" data-nav-section="idiomas" >
+						<select name="lang" class="jflanguageselection" size="1" onchange="document.location.replace(this.value);">
+							<option value="../qillqaq.html">Español</option>
+							<option value="qillqaq.html" selected="selected" >English</option>
+							<option value="../quechua/qillqaq.html">Quechua</option>
+						</select>
+					</a> 
+				</li>
+				<li class="suscripcion">
+					<a href="suscripcion.html" class="btn btn-primary ">SUBSCRIBE</a>
+				</li>
+				
+			</div>
+		</div>
 	</section>
 	<header role="banner" id="fh5co-header">
 
@@ -201,15 +160,7 @@
 						<li><a href="#" data-nav-section="services"  ><span>Projects</span></a></li>
 						<li><a href="#" data-nav-section="about"  ><span>We are</span></a></li>
 						<li><a href="#" data-nav-section="eventos" ><span>Events</span></a></li>
-						<li class="multilang"><a href="#" data-nav-section="idiomas" >
-							<select name="lang" class="jflanguageselection" size="1" onchange="document.location.replace(this.value);">
-								<option value="../qillqaq.html">Español</option>
-								<option value="qillqaq.html" selected="selected" >English</option>
-								<option value="../quechua/qillqaq.html">Quechua</option>
-							</select></a> 
-						</li>
-						<li><img id="imagen" src="../images/icons/image1.png" onclick="cambiar(this);" class="img-responsive; background-position:center; " style="width:20px; height:20px; margin-top: 20px;"></li>
-					  </ul>
+					</ul>
 		        </div>
 			</nav>
 			  
@@ -226,7 +177,7 @@ function openSection(texto){
 </script>
 <!-- menu home -->
 	
-<section id="fh5co-home" data-section="services"  style=" height: 100%; background: url(images/micro2.jpg); background-size: cover; background-attachment: fixed; background-position: center; background-repeat:no-repeat; min-height: 20px; " >
+<section id="fh5co-home" data-section="services"  style=" height: 100%; background: url(../images/micro2.jpg); background-size: cover; background-attachment: fixed; background-position: center; background-repeat:no-repeat; min-height: 20px; " >
 		
 		<div class="work-overlay"></div>
 		<div class="container">
@@ -392,15 +343,7 @@ figcaption{
 	
 
 
-	<script type="text/javascript">
-    $(document).ready(function(){
-      $('.slider').slick({
-      	dots : true,
-      	speed: 1000,
-      	autoplay: true
-      });
-    });
-  </script>
+	
 
 
 	<!-- jQuery -->
@@ -425,63 +368,19 @@ figcaption{
 	<script type="text/javascript" src="../js/scripts.js"></script>
 	<script src="../css/slick.min.js"></script> 
 
-	<!-- Google Map -->
-	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script> -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false">
-	</script>
-
-
-
-	<script src="../js/google_map.js"></script>
+	
 
 	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
 	<script src="../js/jquery.style.switcher.js"></script>
 	  <script defer src="../js/jquery.flexslider.js"></script>
 
   <script defer src="../js/demo.js"></script>
-	<script>
-		$(function(){
-			$('#colour-variations ul').styleSwitcher({
-				defaultThemeId: 'theme-switch',
-				hasPreview: false,
-				cookie: {
-		          	expires: 30,
-		          	isManagingLoad: true
-		      	}
-			});	
-			$('.option-toggle').click(function() {
-				$('#colour-variations').toggleClass('sleep');
-			});
-		});
-	</script>
+
 	<!-- End demo purposes only -->
 
 	<!-- Main JS (Do not remove) -->
 	<script src="../js/main.js"></script>
 
-  
-
-	<script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('.flexslider').flexslider({
-        animation: "slide",
-        controlsContainer: $(".custom-controls-container"),
-        customDirectionNav: $(".custom-navigation a"),
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
-  
-  <script type="text/javascript">
-  	$(document).ready(function() {
-    $('.data').slick();
-	});
-  </script>
 
 <style >
 	

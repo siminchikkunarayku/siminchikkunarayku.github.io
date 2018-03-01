@@ -55,58 +55,7 @@
 	#musica {height:0;width:0;}
 	</style>
 
-	<script>
-	// Array con todas las imágenes que deseamos que se vayan cambiando a
-	// cada clic
-	var imagenes=Array("../images/icons/image1.png","../images/icons/image2.png");
-	var imagenVisible=0;
- 
-	// Función que cambia la imagen actual por la siguiente
-	function cambiar(img)
-	{
-		imagenVisible++;
-		if(imagenVisible>=imagenes.length)
-		{
-			imagenVisible=0;
-		}
-		img.src=imagenes[imagenVisible];
-		cargarSiguienteImagen();
-	}
- 
-	/**
-	 * Esta función carga la siguiente imagen para no tener que esperar su carga
-	 * en el momento de mostrarla.
-	 */
-	function cargarSiguienteImagen()
-	{
-		if((imagenVisible+1)<imagenes.length)
-		{
-			console.log(imagenVisible+1);
-			var imgTmp=new Image();
-			imgTmp.src=imagenes[imagenVisible+1];
-		}
-	}
- 
-	window.onload=function() {
-		cargarSiguienteImagen();
-	}
-	
-	
-	
-	
-	function openAudio(word){
-			
-		    var imagen = document.getElementById('imagen').src;
-			var flag = "0";
-			if (imagen.includes('1')){
-				flag = 1;
-			} else {
-				flag = 0;
-			}			
-		
-				}
-		
-	</script>
+
 	
 	<style>
 	img {cursor:pointer;}
@@ -117,9 +66,7 @@
   <link rel="stylesheet" href="../css/demo.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
 
-  <!-- Modernizr -->
-  <script src="js/modernizr.js"></script>
-  
+ 
   <style>
     .flexslider {
       margin-bottom: 10px;
@@ -170,12 +117,23 @@
 	<body>
 
 	<section>
-	<div style="background: #00a7a3; height:50px;">
-				<!-- <div class="row"> -->
-			<div class="search">
-			  <input id="search" class="search-input"  type="text"> <i style="color:white;" class="icon-search2" aria-hidden="true"></i>
-			</div> 
-    </div>
+		<div class="" style="background: #00a7a3; height:50px;">
+			<div class="container">
+				<li class="multilang">
+					<a href="#" data-nav-section="idiomas" >
+						<select name="lang" class="jflanguageselection" size="1" onchange="document.location.replace(this.value);">
+							<option value="../traductor.html">Español</option>
+							<option value="traductor.html" selected="selected" >English</option>
+							<option value="../quechua/traductor.html">Quechua</option>
+						</select>
+					</a> 
+				</li>
+				<li class="suscripcion">
+					<a href="suscripcion.html" class="btn btn-primary ">SUBSCRIBE</a>
+				</li>
+				
+			</div>
+		</div>
 	</section>
 	<header role="banner" id="fh5co-header">
 
@@ -198,13 +156,7 @@
 						<li><a href="#" data-nav-section="services"  ><span>Projects</span></a></li>
 						<li><a href="#" data-nav-section="about"  ><span>We are</span></a></li>
 						<li><a href="#" data-nav-section="eventos" ><span>Events</span></a></li>
-						<li class="multilang"><a href="#" data-nav-section="idiomas" >
-							<select name="lang" class="jflanguageselection" size="1" onchange="document.location.replace(this.value);">
-								<option value="../traductor.html">Español</option>
-								<option value="traductor.html" selected="selected" >English</option>
-								<option value="../quechua/traductor.html">Quechua</option>
-							</select></a> 
-						</li>
+						
 						<li><img id="imagen" src="../images/icons/image1.png" onclick="cambiar(this);" class="img-responsive; background-position:center; " style="width:20px; height:20px; margin-top: 20px;"></li>
 					  </ul>
 		        </div>
@@ -237,7 +189,7 @@ function openSection(texto){
 
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
-					<h2 class="" >TRADUCTOR QUECHUA</h2>
+					<h2 class="" >QUECHUA TRANSLATOR</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 ">
 							<h3>The first Quechua language voice translator available to everyone.</h3>
@@ -315,100 +267,49 @@ function openSection(texto){
 	</script> 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js">
 	</script>
-	<script type="text/javascript" src="js/slick/slick.min.js"></script>
+	<script type="text/javascript" src="../js/slick/slick.min.js"></script>
 	
 
-
-	<script type="text/javascript">
-    $(document).ready(function(){
-      $('.slider').slick({
-      	dots : true,
-      	speed: 1000,
-      	autoplay: true
-      });
-    });
-  </script>
 
 
 	<!-- jQuery -->
 	<!-- <script src="js/jquery.min.js"></script> -->
 	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="../js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="../js/jquery.waypoints.min.js"></script>
 	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
+	<script src="../js/jquery.stellar.min.js"></script>
 	<!-- Counter -->
-	<script src="js/jquery.countTo.js"></script>
+	<script src="../js/jquery.countTo.js"></script>
 	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script> 
+	<script src="../js/jquery.magnific-popup.min.js"></script>
+	<script src="../js/magnific-popup-options.js"></script> 
 
 
 
-	<script type="text/javascript" src="js/prism.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
-	<script src="css/slick.min.js"></script> 
-
-	<!-- Google Map -->
-	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script> -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false">
-	</script>
+	<script type="text/javascript" src="../js/prism.js"></script>
+	<script type="text/javascript" src="../js/scripts.js"></script>
+	<script src="../css/slick.min.js"></script> 
 
 
-
-	<script src="js/google_map.js"></script>
 
 	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
-	<script src="js/jquery.style.switcher.js"></script>
-	  <script defer src="js/jquery.flexslider.js"></script>
+	<script src="../js/jquery.style.switcher.js"></script>
+	  <script defer src="../js/jquery.flexslider.js"></script>
 
-  <script defer src="js/demo.js"></script>
-	<script>
-		$(function(){
-			$('#colour-variations ul').styleSwitcher({
-				defaultThemeId: 'theme-switch',
-				hasPreview: false,
-				cookie: {
-		          	expires: 30,
-		          	isManagingLoad: true
-		      	}
-			});	
-			$('.option-toggle').click(function() {
-				$('#colour-variations').toggleClass('sleep');
-			});
-		});
-	</script>
+  <script defer src="../js/demo.js"></script>
+
 	<!-- End demo purposes only -->
 
 	<!-- Main JS (Do not remove) -->
-	<script src="js/main.js"></script>
+	<script src="../js/main.js"></script>
 
   
 
-	<script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('.flexslider').flexslider({
-        animation: "slide",
-        controlsContainer: $(".custom-controls-container"),
-        customDirectionNav: $(".custom-navigation a"),
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
-  
-  <script type="text/javascript">
-  	$(document).ready(function() {
-    $('.data').slick();
-	});
-  </script>
+	
 
 	</body>
 </html>
