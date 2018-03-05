@@ -37,6 +37,7 @@
 	
 	<link rel="stylesheet" href="css/style.css">
 
+
 	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
 	<link rel="stylesheet" id="theme-switch" href="css/style.css">
 	<link rel="stylesheet" id="theme-switch" href="css/slick.css">
@@ -833,6 +834,32 @@
 		</div>
 	</footer>
 	
+	<!-- popup -->
+	
+	<h1 style="text-align: center;">Auto-Popup <br> <button onclick="Navigate()">Refrescar página</button></h1>
+    <div class="modal-wrapper" id="popup">
+		<div class="popup-contenedor">
+			
+			<h2 style="color: #595959;  text-align: center;center;margin-bottom: 10px;" >¡SE PARTE DE ESTE PROYECTO!</h2>
+			<p style="color: #aa68a9;  text-align: center;" >Buscamos 50 mil quechuahablantes</p>
+			<p>Contribuye grabando tu voz para desarrollar el primer reconocedor de voz y el traductor del Quechua.</p>
+			
+			
+			
+			<div class="popup-actions" style="display: flex;justify-content: center;" href="https://siminchikkunarayku.pe/corpus/login/?next=/corpus/" >
+				<a href="https://siminchikkunarayku.pe/corpus/login/?next=/corpus/" target="_blank">
+				<button type="button"  class="popup-confirm popup-styled" aria-label="" >
+					Para grabar tu voz regístrate aquí. 
+				</button>
+				</a>
+			</div>
+			
+			
+			<a class="popup-cerrar" href="#popup">X</a>
+			
+		</div>
+	</div>
+
 	
 	
 	
@@ -884,7 +911,13 @@
     });
   </script>
   
-	
+  <!--pop up--->
+	<script type="text/javascript">
+	    function Navigate(){   
+	         window.location.replace('');
+	        return false;
+	    }
+    </script>
 
 
 	<!-- jQuery -->
