@@ -45,6 +45,7 @@
 	<!-- Demo CSS -->
 	<link rel="stylesheet" href="../css/demo.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="../css/flexslider1.css" type="text/css" media="screen" />
 	<!-- contact validation -->
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -690,30 +691,76 @@
 	
 <!-- fin nosotros -->	
 	
-<!-- eventos-->
+<!-- noticias-->
 <section id="fh5co-eventos" data-section="eventos">
     <div class="eventos-overlay"></div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 section-heading text-center" style="margin-top: 50px;">
-					<h2 class=""> Eventos</h2>
-					<div class="row">
-						<div class="col-md-10 col-md-offset-1 subtext ">
-							<h3>¡Coming Soon! on February 21, 2018 we will release the first version of Qillqaq, join this party !.</h3>
-						</div>
-					</div>
+				<div class="col-md-12 section-heading text-center" style="margin-top: 0px;margin-bottom: 0px;">
+					<h2 class="text-center"> Noticias</h2>
 				</div>	
 			</div>
-			<div class="row ">			
-				<figure>
-						<img  src="../images/evento.jpg"  class="img-responsive" style="display:block; margin:auto;">
-				</figure>
-			</div>			
-		</div>		
+						
+			<div id="noticia" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+				<div class="flexslider1">
+					<ul class="slides">
+						<li href="http://puntoedu.pucp.edu.pe/noticias/proyecto-pucp-busca-extender-el-uso-del-quechua/" target="-black">
+						  <a href="http://puntoedu.pucp.edu.pe/noticias/proyecto-pucp-busca-extender-el-uso-del-quechua/">
+								<img data-aria-label-part="" src="https://pbs.twimg.com/media/DXzL2JVXUAcqlP9.jpg" alt="" style="width:564px; height:358px;">
+						   </a>
+						  <p class="flex-caption" >Proyecto PUCP busca extender el uso del quechua.</p>
+						</li>
+						<li>
+						  <a href="http://larepublica.pe/domingo/1045968-chay-mana-qullunanpaq-para-que-no-se-extinga" target="-black"> 
+							<img data-aria-label-part="" src="https://prod.media.larepublica.pe/720x405/larepublica/imagen/2017/08/13/noticia-idioma-suplemento-domingo.jpg"  style="width:564px; height:358px;">
+						  </a>
+						  <p class="flex-caption">Chay mana qullunanpaq (Para que no se extinga).</p>
+						</li>
+						<li href="https://www.linuxfoundation.org/blog/2016-lift-scholarship-winner-luis-camacho-caballero-preserving-amazon-languages-with-linux/" target="_blank">
+						  <img id="imageOriginal" src="https://prod.media.larepublica.pe/720x405/larepublica/imagen/2017/08/13/noticia-suplemento-domingo-nota_0.jpg"  class="" style="width:564px;	height:358px;">
+						  <p class="flex-caption">Ganador de la Beca LiFT 2016 Luis Camacho Caballero: Preservando las lenguas de Amazon con Linux</p>
+						</li>
+						<li>
+						  <a href="https://panamericana.pe/tecnologia/239562-quechua-podra-hablarse-planeta-gracias-proyecto-puedes-parte" target="_blank">
+							<img src="https://img.panamericana.pe/noticia/640-1517325760721.jpg" style="width: 564px;	height: 358px;">
+						  </a>
+						  <p class="flex-caption">¡El Quechua podrá hablarse en todo el planeta gracias a este proyecto y tú puedes ser parte de él.!</p>
+						</li>
+				  </ul>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+				<div class="">
+					<h2>ASR Quechua</h2>
+						<p>La meta de este proyecto es desarrollar un software capaz de convertir locuciones en texto en el idioma Quechua Sureño.
+						</br> Para conseguirlo se hacen uso de las técnicas mas modernas de inteligencia artificial.</p>
+				</div>
+			</div>
+			<!---twitter-->
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-4">
+				<a class="twitter-timeline"  href="https://twitter.com/search?q=from%3Afilac_%20OR%20from%3ASiminchikkuna%20OR%20from%3AUNPFII%20OR%20from%3AMinCulturaPe%20OR%20from%3Anuqanchik%20OR%20from%3AMozillaNativo%20" data-widget-id="971891438282838016">Tweets sobre from:filac_ OR from:Siminchikkuna OR from:UNPFII OR from:MinCulturaPe OR from:nuqanchik OR from:MozillaNativo </a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    
+			</div>
+			</div>
+			
+			
+			<div id="" class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+				<div class="fb-comments" data-href="https://siminchikkunarayku.pe/" data-width="100%" data-numposts="5"></div>
+ 			</div>
+			</div>	
 </section>
 
-<!-- fin eventos-->
-
+<!-- flexslider noticias-->
+<script>
+$(window).load(function() {
+  $('.flexslider1').flexslider({
+    animation: "slide"
+  });
+});
+</script>
+<!-- flexslider noticias-->
 <!-- contactano-->
 	<section id="fh5co-contact" data-section="contact">
 		<div class="contact-overlay"></div>
@@ -735,10 +782,10 @@
 					<ul class="fh5co-contact-info">
 						<li class="fh5co-contact-address ">
 						<img src="../images/icons/home.png" class="icons_bottom">
-							Av. Universitaria 1801, San Miguel Lima - Perú
+							Jr. Sousa 104, Abancay Apurimac - Perú
 						</li>
-						<li><img src="../images/icons/phone_book.png" class="icons_bottom"> (511) 626-2452</li>
-						<li><img src="../images/icons/mail.png" class="icons_bottom"></i>qichwa@pucp.edu.pe</li>
+						<li><img src="../images/icons/phone_book.png" class="icons_bottom">(51)966422108</li>
+						<li><img src="../images/icons/mail.png" class="icons_bottom"></i>siminchikkunarayku@gmail.com</li>
 						<!-- <li><i class="icon-globe"></i> <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></li> -->
 					</ul>
 				</div>
@@ -780,7 +827,7 @@
 	<!--	<div id="map" class="to-animate"></div> -->
 	</section>
 		
-	<footer id="auspiciadores">
+	<section id="auspiciadores">
 		
 		<div class="container">
 			
@@ -806,14 +853,14 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+	</section>
 	
 	<footer id="footer" role="contentinfo">
 		<a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
 		<div class="container">
 			<div class="">
 				<div class="col-md-12 text-center">
-					<p>&copy; University Consortium.<br>Made by <a href="" target="_blank">Nelsi Melgarejo</a></p>
+					<p>&copy; Siminchikkunarayku<br>Made by <a href="" target="_blank">Nelsi Melgarejo</a></p>
 				</div>
 			</div>
 			<div class="row">
