@@ -35,7 +35,7 @@ var message = document.getElementById("message").value;
 $.ajax({
 type: 'POST',
 crossDomain: true,
-url: "https://45.33.42.216:5000/contact",
+url: "http://45.33.42.216:5000/contact",
 data: JSON.stringify({"email":email,"first_name":first_name,"last_name":"","message":message}),
 error: function(e) {
 console.log(e);
