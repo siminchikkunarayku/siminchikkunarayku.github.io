@@ -34,7 +34,7 @@ var email = document.getElementById("email").value;
 $.ajax({
 type: 'POST',
 crossDomain: true,
-url: "http://45.33.42.216:5000/suscription",
+url: "https://45.33.42.216:5000/suscription",
 data: JSON.stringify({"email":email,"first_name":first_name,"last_name":last_name}),
 error: function(e) {
 console.log(e);
